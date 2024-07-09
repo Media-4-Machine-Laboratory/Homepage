@@ -5,13 +5,13 @@
     font-style: normal;
 }
 
-.container {
-    margin: 0 auto;
-}
-
 header {
     margin: 0 auto;
     font-family: 'Pretendard-Regular';
+    position: sticky;
+    top: auto;
+    width: 100%;
+    z-index: 100;
 }
 
 header img {
