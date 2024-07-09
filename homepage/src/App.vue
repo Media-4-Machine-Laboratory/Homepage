@@ -1,19 +1,24 @@
 <template>
   <header>
-    <nav class="navbar">
-      <div class="navbar_logo">
-        <router-link to="/">
-          <img src="./assets/main_assets/logo-small.png" />
-        </router-link>
-      </div>
-      <ul class="navbar_menu">
-        <li><router-link to="/about">About us</router-link></li>
-        <li><router-link to="/publications">Publications</router-link></li>
-        <li><router-link to="/members">Members</router-link></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar_logo">
+          <router-link to="/">
+            <img src="./assets/main_assets/logo-small.png" />
+          </router-link>
+        </div>
+        <ul class="navbar_menu">
+          <li><router-link to="/about">About us</router-link></li>
+          <li><router-link to="/publications">Publications</router-link></li>
+          <li><router-link to="/members">Members</router-link></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <router-view/>
+  <footer class="footer">
+    
+  </footer>
 </template>
 
 <style>
@@ -29,5 +34,7 @@ body {
   margin: 0;
 }
 
-@import "./assets/css/navbar.css"
+@import "./assets/css/navbar.css";
+
+@import "./assets/css/footer.css";
 </style>

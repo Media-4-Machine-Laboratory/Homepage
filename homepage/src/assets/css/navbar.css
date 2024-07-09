@@ -5,12 +5,17 @@
     font-style: normal;
 }
 
+.container {
+    margin: 0 auto;
+}
+
 header {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Pretendard-Regular';
 }
 
 header img {
+    padding: 0.75rem 0;
     width: 10%;
     height: 10%;
 }
@@ -19,6 +24,7 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
     background-color: #FFFFFF;
     padding: 8px 12px;
 }
