@@ -4,6 +4,37 @@
     font-weight: 400;
     font-style: normal;
 }
+
 .landingpage {
     font-family: 'Pretendard-Regular';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.landingpage section {
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+}
+
+.land {
+    background-size: cover;
+}
+
+.land img {
+    height: 25%;
+    width: 25%;
+}
+
+.start {
+    background-image: url();
+    background-size: cover;
 }

@@ -1,6 +1,13 @@
 <template>
   <div class="landingpage">
-    Media for Machine Lab
+    <section class="land">
+      <h1 class="main-logo">
+        <img src="../assets/main_assets/logo-big.png" />
+      </h1>
+      <p class="description-logo">
+        We are ...
+      </p>
+    </section>
   </div>
 </template>
 
