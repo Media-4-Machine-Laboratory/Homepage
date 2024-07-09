@@ -5,11 +5,8 @@
     font-style: normal;
 }
 
-body {
-    margin: 0;
-}
-
 header {
+    margin: 0;
     font-family: 'Pretendard-Regular';
 }
 
@@ -18,15 +15,11 @@ header img {
     height: 10%;
 }
 
-nav {
-    padding: 30px;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F9F9ED;
+    background-color: #FFFFFF;
     padding: 8px 12px;
 }
 
@@ -36,6 +29,7 @@ nav {
 }
 
 .navbar_logo {
+    margin-left: 0;
     font-size: 24px;
 }
 
@@ -47,4 +41,22 @@ nav {
 
 .navbar_menu li {
     padding: 8px 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
 }
