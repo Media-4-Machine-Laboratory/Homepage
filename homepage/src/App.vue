@@ -29,6 +29,11 @@
           <h6>Categories</h6>
           <ul class="footer-links">
             <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/about/projects/VCM">VCM</router-link></li>
+            <li><router-link to="/about/projects/FCM">FCM</router-link></li>
+            <li><router-link to="/about/projects/ACoM">ACoM</router-link></li>
+            <li><router-link to="/about/projects/3D_Avatar">3D Avatar</router-link></li>
+            <li><router-link to="/about/projects/AICC">AICC</router-link></li>
           </ul>
         </div>
         <div class="col-6 col-md-3">
@@ -36,6 +41,8 @@
           <ul class="footer-links">
             <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/about">About us</router-link></li>
+            <li><router-link to="/publications">Publications</router-link></li>
+            <li><router-link to="/members">Members</router-link></li>
           </ul>
         </div>
       </div>
