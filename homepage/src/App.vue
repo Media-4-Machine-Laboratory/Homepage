@@ -17,7 +17,47 @@
   </header>
   <router-view/>
   <footer class="footer">
-    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">
+            This is About.
+          </p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><router-link to="/">Home</router-link></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/about">About us</router-link></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="small"/>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-12">
+          <p class="copyright-text">
+            Copyright © 2024 All Rights Reserved by M4ML.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+          <p>Contact: jeongilseo@dau.ac.kr</p>
+          <ul class="social-icons">
+            <li>
+              <a href="https://github.com/Media-4-Machine-Laboratory"><i class="fab fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
