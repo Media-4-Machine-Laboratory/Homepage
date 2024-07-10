@@ -10,10 +10,21 @@
     </section>
     <section class="map">
       <div class="row">
-        <div class="col">
-          <h1>MAP</h1>
+        <div class="col-md-6">
+          <h3>찾아오시는 길</h3>
+          <p style="font-size: 18px;">주소: 부산광역시 사하구 낙동대로550번길 37(49315)</p>
+          <hr/>
+          <h5>지하철 이용</h5>
+          <div class="row">
+            <div class="col">
+              <p style="font-size: 18px;">순환 버스</p>
+              <p style="font-size: 18px;">1호선 하단역 하차</p>
+            </div>
+            <div class="col"></div>
+          </div>
+          
         </div>
-        <div class="col">
+        <div class="col-md-4">
           <div id="map"></div>
         </div>
       </div>
@@ -108,6 +119,7 @@ export default {
   @import "../assets/css/landing.css";
 
   #map {
+    margin-left: 10px;
     width: 400px;
     height: 400px;
   }
