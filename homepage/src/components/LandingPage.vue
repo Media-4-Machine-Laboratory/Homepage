@@ -1,12 +1,16 @@
 <template>
   <div class="landingpage">
     <section class="land">
-      <h1 class="main-logo">
-        <img src="../assets/main_assets/logo-big.png" />
-      </h1><br>
-      <p class="description-logo">
-        We are ...
-      </p>
+      <div class="main-logo">
+        <h1 class="main-logo">
+          <img src="../assets/main_assets/logo-big.png" />
+        </h1>
+      </div>
+      <div class="description">
+        <p class="description-logo">
+          We are ...
+        </p>
+      </div>
     </section>
     <section class="map">
       <div class="row">
@@ -31,7 +35,13 @@
               </div>
             </div>
           </div>
-          
+          <hr/>
+          <h5>버스 이용</h5>
+            <div class="path-to">
+              <p style="font-size: 18px;"><i class="fa-solid fa-bus"></i> 동아대입구 정류소 하차</p>
+              <p style="font-size: 18px;">2, 16, 68, 123, 126, 138, 338</p>
+              <p style="font-size: 18px;">1001</p>
+            </div>
         </div>
         <div class="col-md-4">
           <div id="map"></div>
