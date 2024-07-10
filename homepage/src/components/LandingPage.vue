@@ -76,7 +76,7 @@ export default {
           position: position.latlng
         })
 
-        var content = `<div class="wrap" style="background-color: #332D2D; opacity: 0.8; color: white; font-family: 'Pretendard-Regular'; font-size: 12px; padding: 5px;">
+        var content = `<div class="cOverlay" style="background-color: #332D2D; opacity: 0.8; color: white; font-family: 'Pretendard-Regular'; font-size: 12px; padding: 5px;">
                         <div class="info">
                           <div class="title">
                             <i class="${position.icon}"></i>
@@ -113,4 +113,6 @@ export default {
     width: 400px;
     height: 400px;
   }
+  .cOverlay .info .title .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+  .cOverlay .info .title .close:hover {cursor: pointer;}
 </style>
