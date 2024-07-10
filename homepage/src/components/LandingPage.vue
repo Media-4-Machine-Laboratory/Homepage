@@ -10,6 +10,7 @@
     </section>
     <section class="map">
       <h1> Map here </h1>
+      <p></p>
     </section>
   </div>
 </template>
