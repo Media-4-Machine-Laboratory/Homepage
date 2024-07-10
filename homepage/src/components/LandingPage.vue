@@ -56,8 +56,8 @@ export default {
     },
     getMarkerPositions() {
       return [
-        {title: 'LAB', latlng: new kakao.maps.LatLng(35.11582996167435, 128.96628227368254)},
-        {title: 'Professor Office', latlng: new kakao.maps.LatLng(35.11705318007645, 128.96754006345864)}
+        {title: 'LAB', latlng: new kakao.maps.LatLng(35.11582996167435, 128.96628227368254), icon: "fas fa-flask"},
+        {title: 'Professor Office', latlng: new kakao.maps.LatLng(35.11705318007645, 128.96754006345864), icon: "far fa-building"}
       ]
     },
     displayMarkers() {
@@ -76,18 +76,22 @@ export default {
           position: position.latlng
         })
 
-        var content = '<div class="wrap">' +
-          '<div class="info">'
+        var content = `<div class="wrap" style="background-color: #332D2D; opacity: 0.8; color: white;">
+                        <div class="info">
+                          <i class="${position.icon}"></i>
+                          ${position.title}
+                        </div>
+                      </div>`
 
         const overlay = new kakao.maps.CustomOverlay({
-          content: `<span class="info-title">${position.title}</span>`,
+          content: content,
           map: map,
           position: marker.getPosition()
         })
 
         kakao.maps.event.addListener(marker, 'click', () => {overlay.setMap(map)})
-        kakao.maps.event.addListener(marker, 'mouseover', () => {overlay.setMap(map)})
-        kakao.maps.event.addListener(marker, 'mouseout', () => {overlay.setMap(null)})
+        //kakao.maps.event.addListener(marker, 'mouseover', () => {overlay.setMap(map)})
+        //kakao.maps.event.addListener(marker, 'mouseout', () => {overlay.setMap(null)})
         this.markers.push(marker)
       })
     },
