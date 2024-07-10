@@ -9,7 +9,7 @@
         <div class="description-area col-md-8">
           <div class="row">
             <div class="col-md-6">
-              <h4 style="padding-bottom: 50%; margin-left: 40%;">We Research</h4>
+              <h4 style="padding-bottom: 50%; margin-left: 50%;">We Research</h4>
             </div>
             <div class="col-lg-6">
               <div class="description">Video</div>
