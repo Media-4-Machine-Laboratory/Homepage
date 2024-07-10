@@ -76,10 +76,13 @@ export default {
           position: position.latlng
         })
 
-        var content = `<div class="wrap" style="background-color: #332D2D; opacity: 0.8; color: white;">
+        var content = `<div class="wrap" style="background-color: #332D2D; opacity: 0.8; color: white; font-family: 'Pretendard-Regular'; font-size: 12px; padding: 5px;">
                         <div class="info">
-                          <i class="${position.icon}"></i>
-                          ${position.title}
+                          <div class="title">
+                            <i class="${position.icon}"></i>
+                            ${position.title}
+                            <div class="close" onclick="this.closeOverlay(overlay)" title="닫기"></div>
+                          </div>
                         </div>
                       </div>`
 
@@ -95,6 +98,9 @@ export default {
         this.markers.push(marker)
       })
     },
+    closeOverlay(overlay) {
+      overlay.setMap(null);
+    }
   }
 }
 </script>
