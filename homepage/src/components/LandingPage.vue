@@ -93,8 +93,6 @@ export default {
         })
 
         kakao.maps.event.addListener(marker, 'click', () => {overlay.setMap(map)})
-        //kakao.maps.event.addListener(marker, 'mouseover', () => {overlay.setMap(map)})
-        //kakao.maps.event.addListener(marker, 'mouseout', () => {overlay.setMap(null)})
         this.markers.push(marker)
       })
     },
