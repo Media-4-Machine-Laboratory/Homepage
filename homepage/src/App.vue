@@ -48,13 +48,16 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-sm-6 col-12">
+        <div class="col-md-4 col-sm-6 col-12">
           <p class="copyright-text">
             Copyright © 2024 All Rights Reserved by M4ML.
           </p>
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
+        <div class="col-md-8 col-sm-6 col-12">
           <p>Contact: jeongilseo@dau.ac.kr</p>
+          <p>LAB: 동아대학교 공과대학1호관 424호(S03-424)</p>
+          <p>Professor: 동아대학교 공과대학5호관 630호(S06-630)</p>
+          <p>부산광역시 사하구 낙동대로 550번길 37(49315)</p>
           <ul class="social-icons">
             <li>
               <a href="https://github.com/Media-4-Machine-Laboratory"><i class="fab fa-github"></i></a>
