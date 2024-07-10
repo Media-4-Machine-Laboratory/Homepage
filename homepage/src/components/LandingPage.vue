@@ -12,13 +12,14 @@
       <div class="row">
         <div class="col-md-6">
           <h3>찾아오시는 길</h3>
-          <p style="font-size: 18px;">주소: 부산광역시 사하구 낙동대로550번길 37(49315)</p>
+          <p style="font-size: 18px;"><i class="fa-solid fa-location-dot"></i> 부산광역시 사하구 낙동대로550번길 37(49315)</p>
           <hr/>
           <h5>지하철 이용</h5>
           <div class="row">
             <div class="col">
               <p style="font-size: 18px;">순환 버스</p>
-              <p style="font-size: 18px;">1호선 하단역 하차</p>
+              <p style="font-size: 18px;"><i class="fas fa-train-subway"></i> 1호선 하단역 하차</p>
+              <p style="font-size: 18px;"><i class="fas fa-bus-simple"></i> 6번 출구에서 순환버스(사하 10) 이용</p>
             </div>
             <div class="col"></div>
           </div>
@@ -33,7 +34,6 @@
 </template>
 
 <script>
-//import { toRaw } from "vue"
 
 export default {
   name: 'LandingPage',
