@@ -71,19 +71,23 @@ export default {
       }
 
       positions.forEach((position) => {
-        const infoWindow = new kakao.maps.InfoWindow({
-          removable: true,
-          content: `<span class="info-title">${position.title}</span>`
-        })
-
         const marker = new kakao.maps.Marker({
           map,
           position: position.latlng
         })
 
-        kakao.maps.event.addListener(marker, 'click', () => {infoWindow.open(map, marker)})
-        kakao.maps.event.addListener(marker, 'mouseover', () => {infoWindow.open(map, marker)})
-        kakao.maps.event.addListener(marker, 'mouseout', () => {infoWindow.close(map, marker)})
+        var content = '<div class="wrap">' +
+          '<div class="info">'
+
+        const overlay = new kakao.maps.CustomOverlay({
+          content: `<span class="info-title">${position.title}</span>`,
+          map: map,
+          position: marker.getPosition()
+        })
+
+        kakao.maps.event.addListener(marker, 'click', () => {overlay.setMap(map)})
+        kakao.maps.event.addListener(marker, 'mouseover', () => {overlay.setMap(map)})
+        kakao.maps.event.addListener(marker, 'mouseout', () => {overlay.setMap(null)})
         this.markers.push(marker)
       })
     },
