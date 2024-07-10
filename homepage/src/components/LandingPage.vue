@@ -20,10 +20,16 @@
               <p style="font-size: 18px;">순환 버스</p>
               <div class="path-to">
                 <p style="font-size: 18px;"><i class="fas fa-train-subway"></i> 1호선 하단역 하차</p>
-                <p style="font-size: 18px;"><i class="fas fa-bus-simple"></i> 6번 출구에서 순환버스(사하 10) 이용</p>
+                <p style="font-size: 18px;"><i class="fas fa-bus-simple"></i> 6번 출구에서 <br> 순환버스(사하 10) 이용</p>
               </div>
             </div>
-            <div class="col"></div>
+            <div class="col">
+              <p style="font-size: 18px;">도보</p>
+              <div class="path-to">
+                <p style="font-size: 18px;"><i class="fas fa-train-subway"></i> 1호선 하단역 하차</p>
+                <p style="font-size: 18px;"><i class="fa-solid fa-person-walking"></i> 9번 출구에서 <br> 10분, 1.1km 이동</p>
+              </div>
+            </div>
           </div>
           
         </div>
