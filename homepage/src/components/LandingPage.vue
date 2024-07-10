@@ -1,15 +1,16 @@
 <template>
   <div class="landingpage">
     <section class="land">
-      <div class="main-logo">
-        <h1 class="main-logo">
+      <div>
+        <div class="main-logo">
           <img src="../assets/main_assets/logo-big.png" />
-        </h1>
-      </div>
-      <div class="description">
-        <p class="description-logo">
-          We are ...
-        </p>
+        </div>
+        <div class="description">
+          <br/>
+          <p class="description-logo">
+            We are Researcher. 
+          </p>
+        </div>
       </div>
     </section>
     <section class="map">

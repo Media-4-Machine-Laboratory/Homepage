@@ -36,6 +36,8 @@
 
 .land {
     background-size: cover;
+    display: inline-block;
+    justify-content: center;
 }
 
 .land img {
