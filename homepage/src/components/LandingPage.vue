@@ -6,7 +6,7 @@
           <img src="../assets/main_assets/logo-big.png" />
         </div>
         <div class="v-line col-sm-1"></div>
-        <div class="col-md-4">
+        <div class="description-area col-md-4">
           We are Research<br>
           <div class="description">Video</div>
           <div class="description">Image</div>
