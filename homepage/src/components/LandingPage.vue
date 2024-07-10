@@ -8,6 +8,9 @@
         We are ...
       </p>
     </section>
+    <section class="map">
+      <h1> Map here </h1>
+    </section>
   </div>
 </template>
 
