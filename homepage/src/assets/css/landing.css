@@ -5,6 +5,15 @@
     font-style: normal;
 }
 
+.landingpage::-webkit-scrollbar {
+    display: none;
+  }
+  
+.landingpage {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .landingpage {
     font-family: 'Pretendard-Regular';
     margin: 0;
