@@ -5,16 +5,22 @@
         <div class="main-logo col-md-6">
           <img src="../assets/main_assets/logo-big.png" />
         </div>
-        <div class="v-line col-sm-1"></div>
-        <div class="description-area col-md-4">
-          We are Research<br>
-          <div class="description">Video</div>
-          <div class="description">Image</div>
-          <div class="description">Audio</div>
-          <div class="description">Computer Vision</div>
-          <div class="description">For Machine</div>
-          <div class="description">For Humans</div>
-          <div class="description">For Future</div>
+        <div class="v-line col-sm-2"></div>
+        <div class="description-area col-md-8">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 style="padding-bottom: 50%; margin-left: 40%;">We Research</h4>
+            </div>
+            <div class="col-lg-6">
+              <div class="description">Video</div>
+              <div class="description">Image</div>
+              <div class="description">Audio</div>
+              <div class="description">Computer Vision</div>
+              <div class="description">For Machine</div>
+              <div class="description">For Humans</div>
+              <div class="description">For Future</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
