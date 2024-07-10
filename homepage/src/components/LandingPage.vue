@@ -8,7 +8,13 @@
         <div class="v-line col-sm-1"></div>
         <div class="col-md-4">
           We are Research<br>
-          <div class="description"></div>
+          <div class="description">Video</div>
+          <div class="description">Image</div>
+          <div class="description">Audio</div>
+          <div class="description">Computer Vision</div>
+          <div class="description">For Machine</div>
+          <div class="description">For Humans</div>
+          <div class="description">For Future</div>
         </div>
       </div>
     </section>
