@@ -1,15 +1,14 @@
 <template>
   <div class="landingpage">
     <section class="land">
-      <div>
-        <div class="main-logo">
+      <div class="row">
+        <div class="main-logo col-md-6">
           <img src="../assets/main_assets/logo-big.png" />
         </div>
-        <div class="description">
-          <br/>
-          <p class="description-logo">
-            We are Researcher. 
-          </p>
+        <div class="v-line col-sm-1"></div>
+        <div class="col-md-4">
+          We are Research<br>
+          <div class="description"></div>
         </div>
       </div>
     </section>
