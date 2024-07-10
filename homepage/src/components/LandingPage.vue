@@ -23,8 +23,12 @@ export default {
   name: 'LandingPage',
   data() {
     return {
-      markerPosition1: [],
-      markerPosition2: [],
+      markerPosition1: [
+        [35.11576734805419, 128.96625334981783]
+      ],
+      markerPosition2: [
+        [35.117131940674106, 128.96768453876615]
+      ],
       markers: [],
       infowindow: null
     }
@@ -32,6 +36,9 @@ export default {
   mounted() {
     if (window.kakao && window.kakao.maps) {
       this.initMap();
+      this.displayMarker(this.markerPosition1);
+      this.displayMarker(this.markerPosition2);
+      var infowindow = new 
     } else {
       const script = document.createElement("script");
       /* global kakao */
@@ -45,7 +52,7 @@ export default {
     initMap() {
       const container = document.getElementById("map");
       const options = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        center: new kakao.maps.LatLng(35.11544015468396, 128.967534172774),
         level: 5,
       };
 
@@ -85,12 +92,7 @@ export default {
         toRaw(this.map).setBounds(bounds);
       }
     },
-    displayInfoWindow() {
-      if (this.infowindow && this.infowindow.getMap()) {
-        //이미 생성한 인포윈도우가 있기 때문에 지도 중심좌표를 인포윈도우 좌표로 이동시킨다.
-        toRaw(this.map).setCenter(this.infowindow.getPosition());
-        return;
-      }
+    displayInfoWindow(markerPosition, Content) {
 
       var iwContent = '<div style="padding:5px;">Hello World!</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
         iwPosition = new kakao.maps.LatLng(33.450701, 126.570667), //인포윈도우 표시 위치입니다
