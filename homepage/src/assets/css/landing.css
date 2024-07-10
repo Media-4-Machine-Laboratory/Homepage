@@ -51,3 +51,7 @@
 .map {
     background-size: cover;
 }
+
+.path-to {
+    text-align: left;
+}

@@ -18,8 +18,10 @@
           <div class="row">
             <div class="col">
               <p style="font-size: 18px;">순환 버스</p>
-              <p style="font-size: 18px;"><i class="fas fa-train-subway"></i> 1호선 하단역 하차</p>
-              <p style="font-size: 18px;"><i class="fas fa-bus-simple"></i> 6번 출구에서 순환버스(사하 10) 이용</p>
+              <div class="path-to">
+                <p style="font-size: 18px;"><i class="fas fa-train-subway"></i> 1호선 하단역 하차</p>
+                <p style="font-size: 18px;"><i class="fas fa-bus-simple"></i> 6번 출구에서 순환버스(사하 10) 이용</p>
+              </div>
             </div>
             <div class="col"></div>
           </div>
