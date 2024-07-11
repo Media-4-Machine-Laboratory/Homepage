@@ -34,6 +34,8 @@
 
 .land {
     background-size: cover;
+    background-image: url('../main_assets/mainpage_background.webp');
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     word-spacing: 2px;
