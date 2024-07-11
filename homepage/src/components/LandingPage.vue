@@ -35,8 +35,8 @@
         <div class="slides">
           <img src="../assets/main_assets/carousel/logo-big.png" />
         </div>
-        <a class="prev" v-on:click="this.changeSlide(-1)">&#10094;</a>
-        <a class="next" v-on:click="this.changeSlide(1)">&#10095;</a>
+        <a class="prev" v-on:click="changeSlide(-1)">&#10094;</a>
+        <a class="next" v-on:click="changeSlide(1)">&#10095;</a>
       </div>
     </section>
     <section class="map">
