@@ -107,27 +107,28 @@
           <h5>지하철 이용</h5>
           <div class="row">
             <div class="col">
-              <p style="font-size: 18px;"><i class="fas fa-bus-simple"></i> 순환 버스</p>
+              <p style="font-size: 24px;"><span class="badge badge-primary"><i class="fas fa-bus-simple"></i> 순환 버스</span></p>
               <div class="path-to">
-                <p style="font-size: 18px;"><i class="fas fa-train-subway"></i> 1호선 하단역 하차</p>
-                <p style="font-size: 18px;"><i class="fas fa-bus-simple"></i> 6번 출구에서 <br> 순환버스(사하 10) 이용</p>
+                <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-warning"><i class="fas fa-train-subway"></i></span> 1호선 하단역 하차</p>
+                <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-success"><i class="fas fa-bus-simple"></i></span> 6번 출구에서 <br> 순환버스(사하 10) 이용</p>
               </div>
             </div>
             <div class="col">
-              <p style="font-size: 18px;"><i class="fa-solid fa-person-walking"></i> 도보</p>
+              <p style="font-size: 24px;"><span class="badge badge-primary"><i class="fa-solid fa-person-walking"></i> 도보</span></p>
               <div class="path-to">
-                <p style="font-size: 18px;"><i class="fas fa-train-subway"></i> 1호선 하단역 하차</p>
-                <p style="font-size: 18px;"><i class="fa-solid fa-person-walking"></i> 9번 출구에서 <br> 10분, 1.1km 이동</p>
+                <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-warning"><i class="fas fa-train-subway"></i></span> 1호선 하단역 하차</p>
+                <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-success"><i class="fa-solid fa-person-walking"></i></span> 9번 출구에서 <br> 10분, 1.1km 이동</p>
               </div>
             </div>
           </div>
           <hr/>
           <h5>버스 이용</h5>
-            <div class="path-to">
-              <p style="font-size: 18px;"><i class="fa-solid fa-bus"></i> 동아대입구 정류소 하차</p>
-              <p style="font-size: 18px;">2, 16, 68, 123, 126, 138, 338</p>
-              <p style="font-size: 18px;">1001</p>
-            </div>
+          <p style="font-size: 24px;"><span class="badge badge-primary"><i class="fa-solid fa-bus"></i> 동아대입구 정류소 하차</span></p>
+          <div class="path-to">
+            
+            <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-primary"><i class="fa-solid fa-bus"></i></span> 2, 16, 68, 123, 126, 138, 338</p>
+            <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-danger"><i class="fa-solid fa-bus"></i></span> 1001</p>
+          </div>
         </div>
         <div class="col-md-6">
           <div id="map" style="height: 100%; width: 100%;"></div>
