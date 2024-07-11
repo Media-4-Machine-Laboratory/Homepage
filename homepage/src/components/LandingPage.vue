@@ -85,6 +85,7 @@ export default {
   data() {
     return {
       markers: [],
+      slideIndex: 0
     }
   },
   mounted() {
@@ -154,6 +155,9 @@ export default {
     },
     closeOverlay(overlay) {
       overlay.setMap(null);
+    },
+    showSlides() {
+      
     }
   }
 }
