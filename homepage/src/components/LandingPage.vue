@@ -10,7 +10,7 @@
         <!-- Column1 End -->
         <!-- Column2: Vertical Line Start -->
         <div class="v-line col-sm-2"></div>
-        <!-- -->
+        <!-- Column3: Main Desc Start -->
         <div class="description-area col-md-8">
           <div class="row">
             <div class="col-md-6">
@@ -27,6 +27,7 @@
             </div>
           </div>
         </div>
+        <!-- Column3 End -->
       </div>
     </section>
     <section class="start">
