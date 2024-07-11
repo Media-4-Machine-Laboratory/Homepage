@@ -103,7 +103,6 @@ export default {
         arrows: true,
         dots: true,
         animatedDots: true,
-        width: '1600px'
       }
     }
   },
