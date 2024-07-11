@@ -26,7 +26,7 @@
     </section>
     <section class="start">
       <div class="slide-container">
-        <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-carousel-init>
+        <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel" data-mdb-carousel-init>
           <!-- Indicators -->
           <div class="carousel-indicators">
             <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
@@ -105,16 +105,18 @@
           <p style="font-size: 18px;"><i class="fa-solid fa-location-dot"></i> 부산광역시 사하구 낙동대로550번길 37(49315)</p>
           <hr/>
           <h5>지하철 이용</h5>
-          <div class="row">
-            <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
               <p style="font-size: 24px;"><span class="badge badge-primary"><i class="fas fa-bus-simple"></i> 순환 버스</span></p>
               <div class="path-to">
                 <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-warning"><i class="fas fa-train-subway"></i></span> 1호선 하단역 하차</p>
                 <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-success"><i class="fas fa-bus-simple"></i></span> 6번 출구에서 <br> 순환버스(사하 10) 이용</p>
               </div>
             </div>
-            <div class="col-sm-1 v-line2"></div>
-            <div class="col">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="v-line2"></div>
+            </div>
+            <div class="col-md-4">
               <p style="font-size: 24px;"><span class="badge badge-primary"><i class="fa-solid fa-person-walking"></i> 도보</span></p>
               <div class="path-to">
                 <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-warning"><i class="fas fa-train-subway"></i></span> 1호선 하단역 하차</p>
