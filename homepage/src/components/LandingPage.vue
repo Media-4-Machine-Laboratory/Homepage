@@ -26,7 +26,7 @@
     </section>
     <section class="start">
       <div class="slide">
-        <splide :options="slide_options" :has-track="false">
+        <splide :options="slide_options">
           <splide-slide>
             <img src="../assets/main_assets/carousel/logo-big.png">
           </splide-slide>
@@ -86,7 +86,7 @@ export default {
   name: 'LandingPage',
   components: {
     Splide,
-    SplideSlide,
+    SplideSlide
   },
   data() {
     return {
@@ -94,13 +94,14 @@ export default {
       slide_options: {
         type: 'fade',
         rewind: true,
-        width: 1050,
         perPage: 1,
+        gap: '1rem',
         autoplay: true,
         pauseOnHover: false,
         arrows: true,
         dots: true,
-        animatedDots: true
+        animatedDots: true,
+        width: '1600px'
       }
     }
   },
