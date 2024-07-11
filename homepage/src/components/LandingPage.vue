@@ -97,8 +97,9 @@
         </div>
       </div>
     </section>
-    <section class="map">
-      <div class="row">
+    <section class="map d-flex">
+      <div></div>
+      <div class="row container-fluid d-flex jusify-content-center">
         <div class="col-md-6">
           <h3>찾아오시는 길</h3>
           <p style="font-size: 18px;"><i class="fa-solid fa-location-dot"></i> 부산광역시 사하구 낙동대로550번길 37(49315)</p>
@@ -128,10 +129,11 @@
               <p style="font-size: 18px;">1001</p>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div id="map"></div>
         </div>
       </div>
+      <div></div>
     </section>
   </div>
 </template>
@@ -164,7 +166,7 @@ export default {
       const container = document.getElementById("map");
       const options = {
         center: new kakao.maps.LatLng(35.11464802405306, 128.96692288109705),
-        level: 4
+        level: 4,
       };
 
       this.map = new kakao.maps.Map(container, options);
@@ -219,7 +221,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   @import "../assets/css/landing.css";
   @import '~mdb-ui-kit/css/mdb.min.css';

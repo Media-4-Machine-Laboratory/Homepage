@@ -102,6 +102,7 @@
 }
 
 .map {
+    justify-content: center;
     background-size: cover;
 }
 
