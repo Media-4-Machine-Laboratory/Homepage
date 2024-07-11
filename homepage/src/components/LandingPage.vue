@@ -25,18 +25,18 @@
       </div>
     </section>
     <section class="start">
-      <div class="slideshow-container">
-        <div class="slides">
-          <img src="../assets/main_assets/carousel/logo-big.png" />
-        </div>
-        <div class="slides">
-          <img src="../assets/main_assets/carousel/logo-big.png" />
-        </div>
-        <div class="slides">
-          <img src="../assets/main_assets/carousel/logo-big.png" />
-        </div>
-        <a class="prev" v-on:click="changeSlide(-1)">&#10094;</a>
-        <a class="next" v-on:click="changeSlide(1)">&#10095;</a>
+      <div class="slide">
+        <splide :options="slide_options">
+          <splide-slide>
+            <img src="../assets/main_assets/carousel/logo-big.png">
+          </splide-slide>
+          <splide-slide>
+            <img src="../assets/main_assets/carousel/logo-big.png">
+          </splide-slide>
+          <splide-slide>
+            <img src="../assets/main_assets/carousel/logo-big.png">
+          </splide-slide>
+        </splide>
       </div>
     </section>
     <section class="map">
@@ -79,13 +79,23 @@
 </template>
 
 <script>
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 export default {
   name: 'LandingPage',
+  components: {
+    Splide,
+    SplideSlide
+  },
   data() {
     return {
       markers: [],
-      slideIndex: 0
+      slide_options: {
+        rewind: true,
+        width: 800,
+        gap: '1rem'
+      }
     }
   },
   mounted() {
@@ -99,8 +109,6 @@ export default {
         "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=dcf2430e47f4d6e4c7eae6a01045a618";
       document.head.appendChild(script);
     }
-
-    this.showSlides()
   },
   methods: {
     initMap() {
@@ -158,36 +166,6 @@ export default {
     closeOverlay(overlay) {
       overlay.setMap(null);
     },
-    showSlides() {
-      var slides = document.getElementsByClassName("slides")
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      this.slideIndex++;
-      
-      if (this.slideIndex > slides.length) {
-        this.slideIndex = 1
-      }
-
-      slides[this.slideIndex-1].style.display = "block";
-      setTimeout(this.showSlides, 3000);
-    },
-    changeSlide(n) {
-      this.slideIndex += n;
-      var slides = document.getElementsByClassName("slides");
-
-      if (this.slideIndex > slides.length) {
-        this.slideIndex = 1
-      }
-      if (this.slideIndex < 1) {
-        this.slideIndex = slides.length;
-      }
-
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[this.slideIndex-1].style.display = "block";
-    }
   }
 }
 </script>
