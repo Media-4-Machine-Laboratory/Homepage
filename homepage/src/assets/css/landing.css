@@ -28,7 +28,6 @@
     scroll-snap-align: start;
     height: 100vh;
     align-items: center;
-    color: black;
     font-size: x-large;
 }
 
@@ -39,17 +38,23 @@
     word-spacing: 2px;
     overflow: hidden;
     background-size: cover;
-    background-image: url('../main_assets/mainpage_background.png');    
+    background: url('../main_assets/mainpage_background.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: 1;
 }
 
 .land::before {
-    
-    background-color: rgba(0, 0, 0, 0.4);
-    position:absolute;
+    content: "";
+    position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
+    z-index: -2;
+    background-color: rgba(0, 0, 0, 0.4);
+    
 }
 
 .land img {
@@ -111,12 +116,13 @@
 
 .start {
     margin-top: 30%;
+    color: black;
 }
 
 .map {
     justify-content: center;
     background-size: cover;
-    margin-top: 5%;
+    margin-top: 5%;   
 }
 
 .path-to {
@@ -129,7 +135,7 @@
 }
 
 .v-line {
-    border-left : thick solid #000000;
+    border-left : thick solid #FFFFFF;
     height : 200px;
 }
 
