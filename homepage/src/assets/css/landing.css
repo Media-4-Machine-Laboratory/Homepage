@@ -100,7 +100,8 @@
 }
 
 .start {
-    
+    display: inline-block;
+    justify-content: center;
     background-size: cover;
 }
 
@@ -130,6 +131,7 @@
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
+    margin-top: 15px;
     height: 70vh;
 }
 
