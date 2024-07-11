@@ -27,8 +27,6 @@
 .landingpage section {
     scroll-snap-align: start;
     height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
     color: black;
     font-size: x-large;
@@ -36,7 +34,7 @@
 
 .land {
     background-size: cover;
-    display: inline-block;
+    display: flex;
     justify-content: center;
     word-spacing: 2px;
     overflow: hidden;
@@ -97,6 +95,10 @@
     100% {
         margin-top: -10px;
     }
+}
+
+.start {
+    margin-top: 30%;
 }
 
 .map {
