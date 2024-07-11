@@ -157,7 +157,34 @@ export default {
       overlay.setMap(null);
     },
     showSlides() {
+      var slides = document.getElementsByClassName("slides")
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      this.slideIndex++;
       
+      if (this.slideIndex > slides.length) {
+        this.slideIndex = 1
+      }
+
+      slides[this.slideIndex-1].style.display = "block";
+      setTimeout(this.showSlides, 3000);
+    },
+    changeSlide(n) {
+      this.slideIndex += n;
+      var slides = document.getElementsByClassName("slides");
+
+      if (this.slideIndex > slides.length) {
+        this.slideIndex = 1
+      }
+      if (this.slideIndex < 1) {
+        this.slideIndex = slides.length;
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[this.slideIndex-1].style.display = "block";
     }
   }
 }
