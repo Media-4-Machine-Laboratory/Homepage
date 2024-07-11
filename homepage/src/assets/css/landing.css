@@ -34,12 +34,22 @@
 
 .land {
     background-size: cover;
-    background-image: url('../main_assets/mainpage_background.webp');
-    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     word-spacing: 2px;
     overflow: hidden;
+    background-size: cover;
+    background-image: url('../main_assets/mainpage_background.png');    
+}
+
+.land::before {
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .land img {
