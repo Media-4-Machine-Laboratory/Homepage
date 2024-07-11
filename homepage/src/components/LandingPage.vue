@@ -25,16 +25,18 @@
       </div>
     </section>
     <section class="start">
-      <div class="slide">
+      <div class="slide-container">
         <splide :options="slide_options">
           <splide-slide>
-            <img src="../assets/main_assets/carousel/logo-big.png">
-          </splide-slide>
-          <splide-slide>
-            <img src="../assets/main_assets/carousel/logo-big.png">
-          </splide-slide>
-          <splide-slide>
-            <img src="../assets/main_assets/carousel/logo-big.png">
+            <img 
+            src="../assets/main_assets/carousel/logo-big.png"
+            class="img-fluid"
+            />
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <p class="text-white mb-0">VCM</p>
+              </div>
+            </div>
           </splide-slide>
         </splide>
       </div>
