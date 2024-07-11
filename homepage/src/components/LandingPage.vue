@@ -26,19 +26,7 @@
     </section>
     <section class="start">
       <div class="slide-container">
-        <splide :options="slide_options">
-          <splide-slide>
-            <img 
-            src="../assets/main_assets/carousel/logo-big.png"
-            class="img-fluid"
-            />
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
-              <div class="d-flex justify-content-center align-items-center h-100">
-                <p class="text-white mb-0">VCM</p>
-              </div>
-            </div>
-          </splide-slide>
-        </splide>
+        
       </div>
     </section>
     <section class="map">
@@ -81,29 +69,12 @@
 </template>
 
 <script>
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 export default {
   name: 'LandingPage',
-  components: {
-    Splide,
-    SplideSlide
-  },
   data() {
     return {
       markers: [],
-      slide_options: {
-        type: 'fade',
-        rewind: true,
-        perPage: 1,
-        gap: '1rem',
-        autoplay: true,
-        pauseOnHover: false,
-        arrows: true,
-        dots: true,
-        animatedDots: true,
-      }
     }
   },
   mounted() {
