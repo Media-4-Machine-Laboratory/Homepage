@@ -113,6 +113,7 @@
                 <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-success"><i class="fas fa-bus-simple"></i></span> 6번 출구에서 <br> 순환버스(사하 10) 이용</p>
               </div>
             </div>
+            <div class="col-sm-1 v-line2"></div>
             <div class="col">
               <p style="font-size: 24px;"><span class="badge badge-primary"><i class="fa-solid fa-person-walking"></i> 도보</span></p>
               <div class="path-to">
@@ -125,7 +126,6 @@
           <h5>버스 이용</h5>
           <p style="font-size: 24px;"><span class="badge badge-primary"><i class="fa-solid fa-bus"></i> 동아대입구 정류소 하차</span></p>
           <div class="path-to">
-            
             <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-primary"><i class="fa-solid fa-bus"></i></span> 2, 16, 68, 123, 126, 138, 338</p>
             <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-danger"><i class="fa-solid fa-bus"></i></span> 1001</p>
           </div>
