@@ -25,21 +25,7 @@
       </div>
     </section>
     <section class="start">
-      <div slideWidth="100%">
-        <Carousel :autoplay="2000" :wrap-around="true">
-          <Slide v-for="slide in items[0].menus" :key="slide">
-            <div class="carousel__item">
-              <figure>
-                <img :src="slide.image" :alt="slide.alt" />
-                <figcaption><em>{{ slide.caption }}</em><span>{{ slide.discription }}</span></figcaption>
-              </figure>
-            </div>
-          </Slide>
-          <template #addons>
-            <Pagination />
-          </template>
-        </Carousel>
-      </div>
+      
     </section>
     <section class="map">
       <div class="row">
@@ -81,35 +67,12 @@
 </template>
 
 <script>
-import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination } from 'vue3-carousel'
-import { defineComponent } from 'vue';
 
-export default defineComponent({
+export default {
   name: 'LandingPage',
-  components: {
-    Carousel,
-    Slide,
-    Pagination,
-  },
   data() {
-    
     return {
       markers: [],
-      items: [
-      {
-        title: 'Carousel Slider',
-        description: 'Images for Slider',
-        menus: [
-          {
-            image: require('../assets/main_assets/carousel/logo-big.png'),
-            alt: 'VCM / FCM',
-            caption: 'VCM / FCM',
-            description: 'VCM and FCM'
-          }
-        ]
-      }
-    ]
     }
   },
   mounted() {
@@ -181,7 +144,7 @@ export default defineComponent({
       overlay.setMap(null);
     }
   }
-})
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
