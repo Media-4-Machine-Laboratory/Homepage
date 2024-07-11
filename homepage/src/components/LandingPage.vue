@@ -141,12 +141,15 @@
             <p style="font-size: 18px;"><span style="font-size: 20px;" class="badge rounded-pill badge-danger"><i class="fa-solid fa-bus"></i></span> 1001</p>
           </div>
         </div>
+        <!-- Column2: Map Start -->
         <div class="col-md-6">
           <div id="map" style="height: 100%; width: 100%;"></div>
         </div>
+        <!-- Column3: Map End -->
       </div>
       <div></div>
     </section>
+    <!-- Third Section End -->
   </div>
 </template>
 
