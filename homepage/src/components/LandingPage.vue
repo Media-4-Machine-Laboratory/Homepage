@@ -138,7 +138,7 @@
 
 <script>
 import { Carousel, initMDB } from 'mdb-ui-kit';
-initMDB({Carousel})
+
 export default {
   name: 'LandingPage',
   data() {
@@ -157,6 +157,7 @@ export default {
         "//dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=dcf2430e47f4d6e4c7eae6a01045a618";
       document.head.appendChild(script);
     }
+    initMDB({Carousel})
   },
   methods: {
     initMap() {
