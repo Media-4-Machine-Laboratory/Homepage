@@ -38,11 +38,12 @@
     word-spacing: 2px;
     overflow: hidden;
     background-size: cover;
-    background: url('../main_assets/mainpage_background.png');
+    background-image: url('../main_assets/mainpage_background.png');
     background-color: transparent;
     background-repeat: no-repeat;
     color: white;
     z-index: 1;
+    position: relative;
 }
 
 .land::before {

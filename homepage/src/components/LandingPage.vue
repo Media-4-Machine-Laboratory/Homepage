@@ -12,7 +12,7 @@
         <div class="v-line col-sm-2"></div>
         <!-- Column3: Main Desc Start -->
         <div class="description-area col-md-8">
-          <div class="row">
+          <div class="row" style="color: white">
             <div class="col-md-6">
               <h4 style="padding-bottom: 50%; margin-left: 50%;">We Research</h4>
             </div>
