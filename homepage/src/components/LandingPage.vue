@@ -25,14 +25,21 @@
       </div>
     </section>
     <section class="start">
-      <Carousel :autoplay="2000" :wrap-around="true">
-        <Slide v-for="slide in 10" :key="slide">
-          <div class="carousel__item">{{ slide }}</div>
-        </Slide>
-        <template #addons>
-          <Pagination />
-        </template>
-      </Carousel>
+      <div slideWidth="100%">
+        <Carousel :autoplay="2000" :wrap-around="true">
+          <Slide v-for="slide in items[0].menus" :key="slide">
+            <div class="carousel__item">
+              <figure>
+                <img :src="slide.image" :alt="slide.alt" />
+                <figcaption><em>{{ slide.caption }}</em><span>{{ slide.discription }}</span></figcaption>
+              </figure>
+            </div>
+          </Slide>
+          <template #addons>
+            <Pagination />
+          </template>
+        </Carousel>
+      </div>
     </section>
     <section class="map">
       <div class="row">
@@ -86,8 +93,23 @@ export default defineComponent({
     Pagination,
   },
   data() {
+    
     return {
-      markers: []
+      markers: [],
+      items: [
+      {
+        title: 'Carousel Slider',
+        description: 'Images for Slider',
+        menus: [
+          {
+            image: require('../assets/main_assets/carousel/logo-big.png'),
+            alt: 'VCM / FCM',
+            caption: 'VCM / FCM',
+            description: 'VCM and FCM'
+          }
+        ]
+      }
+    ]
     }
   },
   mounted() {
