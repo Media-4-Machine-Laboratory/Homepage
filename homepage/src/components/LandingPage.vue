@@ -29,7 +29,7 @@
         <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel" data-mdb-carousel-init>
           <!-- Indicators -->
           <div class="carousel-indicators">
-            <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+            <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active" aria-current="true"></li>
             <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
             <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
           </div>
