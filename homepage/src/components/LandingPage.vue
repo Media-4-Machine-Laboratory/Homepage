@@ -30,6 +30,7 @@
         <!-- Column3 End -->
       </div>
     </section>
+    <!-- Second Section Start: Banner -->
     <section class="start">
       <div class="slide-container">
         <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel" data-mdb-carousel-init data-mdb-interval="3000">
@@ -103,6 +104,8 @@
         </div>
       </div>
     </section>
+    <!-- Second Section End -->
+    <!-- Third Section Start -->
     <section class="map d-flex">
       <div></div>
       <div class="row container-fluid d-flex jusify-content-center">
