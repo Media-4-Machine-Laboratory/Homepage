@@ -137,7 +137,8 @@
 </template>
 
 <script>
-//import { Carousel } from 'vue-cli-plugin-mdb5';
+import { Carousel, initMDB } from 'mdb-ui-kit';
+initMDB({Carousel})
 export default {
   name: 'LandingPage',
   data() {

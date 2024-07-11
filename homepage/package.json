@@ -11,10 +11,8 @@
     "@splidejs/vue-splide": "^0.6.12",
     "core-js": "^3.8.3",
     "mdb-ui-kit": "^7.3.2",
-    "mdb-vue-ui-kit": "^5.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
-    "vue3-carousel": "^0.3.3",
     "vuetify": "^3.6.11"
   },
   "devDependencies": {
@@ -25,8 +23,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "vue-cli-plugin-mdb5": "~2.1.0"
+    "eslint-plugin-vue": "^8.0.3"
   },
   "eslintConfig": {
     "root": true,
