@@ -24,6 +24,16 @@
         </div>
       </div>
     </section>
+    <section class="start">
+      <Carousel :autoplay="2000" :wrap-around="true">
+        <Slide v-for="slide in 10" :key="slide">
+          <div class="carousel__item">{{ slide }}</div>
+        </Slide>
+        <template #addons>
+          <Pagination />
+        </template>
+      </Carousel>
+    </section>
     <section class="map">
       <div class="row">
         <div class="col-md-6">
@@ -64,9 +74,17 @@
 </template>
 
 <script>
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
+import { defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
   name: 'LandingPage',
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+  },
   data() {
     return {
       markers: []
@@ -141,7 +159,7 @@ export default {
       overlay.setMap(null);
     }
   }
-}
+})
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
