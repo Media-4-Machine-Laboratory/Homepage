@@ -1,11 +1,16 @@
 <template>
   <div class="landingpage">
+    <!-- First Section Start: landing page -->
     <section class="land">
       <div class="row">
+        <!-- Column1: Main logo Start -->
         <div class="main-logo col-md-6">
           <img src="../assets/main_assets/logo-big.png" />
         </div>
+        <!-- Column1 End -->
+        <!-- Column2: Vertical Line Start -->
         <div class="v-line col-sm-2"></div>
+        <!-- -->
         <div class="description-area col-md-8">
           <div class="row">
             <div class="col-md-6">
