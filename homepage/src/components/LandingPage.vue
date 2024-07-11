@@ -137,7 +137,7 @@
 </template>
 
 <script>
-
+import { Carousel } from 'vue-cli-plugin-mdb5';
 export default {
   name: 'LandingPage',
   data() {
@@ -220,6 +220,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   @import "../assets/css/landing.css";
+  @import '~mdb-ui-kit/css/mdb.min.css';
 
   #map {
     margin-left: 10px;
