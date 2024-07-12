@@ -31,15 +31,15 @@
                     <hr/>
                     <div class="members-name d-flex justify-content-center">
                         <div class="row">
-                            <div class="col-md-4">
-                                <div v-for="item in this.members_" :key="item.name">
+                            <div v-for="item in members_" :key="item.name">
+                                <div class="col-md-4">
                                     <div v-if="item.postion='professor'">
-                                        <img :src="item.image_url" class="img-fluid" style="margin-left: 10%; width: 100%" />
+                                        <img :src="item.image_url" class="img-fluid" style="margin-left: 10%; width: 200px;" />
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="h2 text-uppercase">{{ item.name }}</p>
+                                <div class="col-md-6">
+                                    <p class="h2 text-uppercase">{{ item.name }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
