@@ -84,12 +84,17 @@
                                 </div>
                                 <div class="col-2 v-line"></div>
                                 <div class="col-6">
-                                    
-                                    <!--<div class="information" v-for="i in item.educational_background" :key="i.name">
-                                        <p>{{ i.name }}</p>
-                                    </div>-->
+                                    <ul class="list-group list-group-light" v-for="i in item.educational_background" :key="i.name">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <div class="fw-bold">{{ i.name }}</div>
+                                                <div class="text-muted">{{ i.start_year }} - {{ i.end_year }}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <!-- Education Background End -->
                         </div>
                     </div>
                 </div>
