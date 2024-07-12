@@ -31,14 +31,15 @@
                     <hr/>
                     <div>
                         <div v-for="item in members_" :key="item.name">
-                            <div class="row d-flex justify-content-center">
+                            <!-- Main Info Start -->
+                            <div class="main-info row d-flex justify-content-center">
                                 <!-- Image -->
                                 <div class="col-4 col-lg-4">
                                     <div v-if="item.postion='professor'">
                                         <img :src="item.image_url" class="img-fluid shadow-2-strong" style="margin-left: 10%; width: 100%;" />
                                     </div>
                                 </div>
-                                <!-- Information -->
+                                <!-- Information Start -->
                                 <div class="col-8 col-lg-8">
                                     <br>
                                     <p class="member-name h2 text-uppercase fw-bold">{{ item.last_name }} {{ item.first_name }}</p>
@@ -71,6 +72,18 @@
                                             </p>
                                         </div>
                                     </div>
+                                </div>
+                                <!-- Information End -->
+                                <hr/>
+                            </div>
+                            <!-- Main Info End -->
+                            <!-- Education Background Start -->
+                            <div class="education_background row d-flex justify-content-center">
+                                <div class="col-4">
+                                    <p class="h2">Education</p>
+                                </div>
+                                <div class="col-8" v-for="i in item.educational_background" :key="i.name">
+                                    {{ i.name }}
                                 </div>
                             </div>
                         </div>
