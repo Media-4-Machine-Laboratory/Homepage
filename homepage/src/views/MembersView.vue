@@ -84,9 +84,21 @@
                                 </div>
                                 <div class="col-2 v-line"></div>
                                 <div class="col-6">
-                                    <div class="information" v-for="i in item.educational_background" :key="i.name">
+                                    <section class="timeline-section">
+                                        <div class="timeline">
+                                            <div class="timeline-empty"></div>
+                                            <div class="timeline-middle">
+                                                <div class="timeline-circle"></div>
+                                            </div>
+                                            <div class="timeline-component" v-for="i in item.educational_background" :key="i.name">
+                                                <h3>{{ i.name }}</h3>
+                                                <p>{{ i.start_year }} ~ {{ i.end_year }}</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!--<div class="information" v-for="i in item.educational_background" :key="i.name">
                                         <p>{{ i.name }}</p>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
