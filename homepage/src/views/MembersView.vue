@@ -12,7 +12,30 @@
                 <li class="nav-item" role="presentation">
                     <a data-mdb-tab class="nav-link" id="members1-tab3" href="#members1-tabs3" role="tab" aria-controls="members1-tabs3" aria-selected="false">Undergraduate</a>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <a data-mdb-tab class="nav-link" id="members1-tab4" href="#members1-tabs4" role="tab" aria-controls="members1-tabs4" aria-selected="false">Alumni</a>
+                </li>
             </ul>
+        </div>
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="members1-content">
+            <!-- Tabs Professor -->
+            <div class="tab-pane fade show active" id="members1-tabs1" role="tabpanel" aria-labelledby="members-tab1">
+                Tab1 Content
+            </div>
+            <!-- Tabs Graduate -->
+            <div class="tab-pane fade" id="members1-tabs2" role="tabpanel" aria-labelledby="members-tab2">
+                Tab2 Content
+            </div>
+            <!-- Tabs Undergraduate -->
+            <div class="tab-pane fade" id="members1-tabs3" role="tabpanel" aria-labelledby="members-tab3">
+                Tab3 Content
+            </div>
+            <!-- Tabs Alumni -->
+            <div class="tab-pane fade" id="members1-tabs4" role="tabpanel" aria-labelledby="members-tab4">
+                Tab4 Content
+            </div>
         </div>
     </div>
 </template>
@@ -27,3 +50,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@import url("../assets/css/members.css");
+</style>
