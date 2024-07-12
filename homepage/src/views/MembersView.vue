@@ -332,7 +332,25 @@ export default {
         this.members_alumni = members_alumni;
     },
     setRouterMember(item) {
-        this.$router.push({name: 'member', params: {member: item}});
+        this.$router.push(
+            {
+                name: 'member',
+                query: {
+                    name: item.name,
+                    first_name: item.first_name,
+                    last_name: item.last_name,
+                    email: item.email,
+                    position: item.positions,
+                    interest: item.interest,
+                    image_url: item.image_url,
+                    cv_url: item.cv_url,
+                    description: item.description,
+                    project: item.project,
+                    educational_background: item.educational_background,
+                    career: item.career
+                }
+            }
+        );
     }
   }
 }

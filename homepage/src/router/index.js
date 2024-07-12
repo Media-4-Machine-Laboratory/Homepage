@@ -23,10 +23,9 @@ const routes = [
     component: MembersView
   },
   {
-    path: '/member/:member',
+    path: '/member',
     name: 'member',
-    component: MemberView,
-    props: true
+    component: MemberView
   }
 ]
 
