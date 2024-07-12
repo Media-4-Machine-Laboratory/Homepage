@@ -1,36 +1,29 @@
 <template>
     <div class="members">
-        <MDBTabs v-model="activeTabId3">
-            <!-- Tabs navs -->
-            <MDBTabNav justify tabsClasses="mb-3">
-                <MDBTabItem tabId="members1" href="members1">Professor</MDBTabItem>
-                <MDBTabItem tabId="members2" href="members2">Graduate</MDBTabItem>
-                <MDBTabItem tabId="members3" href="members3">Undergraduate</MDBTabItem>
-                <MDBTabItem tabId="members4" href="members4">Alumni</MDBTabItem>
-            </MDBTabNav>
-        </MDBTabs>
+        <!-- Tabs navs -->
+        <div class="members-tabs">
+            <ul class="nav nav-tabs nav-justified mb-3" id="members1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a data-mdb-tab class="nav-link active" id="members1-tab1" href="#members1-tabs1" role="tab" aria-controls="members1-tabs1" aria-selected="true">Professor</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a data-mdb-tab class="nav-link" id="members1-tab2" href="#members1-tabs2" role="tab" aria-controls="members1-tabs2" aria-selected="false">Graduate</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a data-mdb-tab class="nav-link" id="members1-tab3" href="#members1-tabs3" role="tab" aria-controls="members1-tabs3" aria-selected="false">Undergraduate</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
 <script>
-import { MDBTabs, MDBTabNav, MDBTabContent, MDBTabItem, MDBTabPane } from 'mdb-ui-kit';
-import { ref } from 'vue';
+import { Tab, initMDB } from 'mdb-ui-kit';
 
 export default {
   name: 'MembersView',
-  components: {
-    MDBTabs,
-    MDBTabNav,
-    MDBTabContent, 
-    MDBTabItem, 
-    MDBTabPane
-  },
-  setup() {
-    const activeTabId3 = ref('members1');
-
-    return {
-        activeTabId3
-    }
+  mounted() {
+    initMDB({ Tab });
   }
 }
 </script>
