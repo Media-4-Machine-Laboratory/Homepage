@@ -7,9 +7,8 @@
         "positions": "professor",
         "image_url": "jeongilseo.png",
         "social": [
-            {"github": "none"},
-            {"linkedin": "none"},
-            {"sites": "none"}
+            {"name": "github", "link": "none"},
+            {"name": "linkedin", "link": "none"}
         ],
         "cv_url": "",
         "project": [{}],
@@ -38,9 +37,8 @@
         ],
         "image_url": "jeongilseo.png",
         "social": [
-            {"github": "none"},
-            {"linkedin": "none"},
-            {"sites": "none"}
+            {"name": "github", "link": "none"},
+            {"name": "linkedin", "link": "none"}
         ],
         "cv_url": "",
         "project": [{}],
