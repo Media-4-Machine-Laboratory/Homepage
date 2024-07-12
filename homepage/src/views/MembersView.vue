@@ -22,7 +22,12 @@
         <div class="tab-content" id="members1-content">
             <!-- Tabs Professor -->
             <div class="tab-pane fade show active" id="members1-tabs1" role="tabpanel" aria-labelledby="members1-tab1">
-                Tab1 Content
+                <div class="members-container container-fuild d-flex justify-content-start">
+                    <div class="members-title">
+                        <h2>Professor</h2>
+                    </div>
+                <hr/>
+                </div>
             </div>
             <!-- Tabs Graduate -->
             <div class="tab-pane fade" id="members1-tabs2" role="tabpanel" aria-labelledby="members1-tab2">
