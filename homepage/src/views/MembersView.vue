@@ -29,13 +29,14 @@
                         <h2 class="member-title">Professor</h2>
                     </div>
                     <hr/>
-                    <div>
-                        <div v-for="item in members_" :key="item.name">
+                    <div v-for="item in members_" :key="item.name">
+                        {{ item.position }}
+                        <div v-if="item.position==='professor'">
                             <!-- Main Info Start -->
                             <div class="main-info row d-flex justify-content-center">
                                 <!-- Image -->
                                 <div class="col-4 col-lg-4">
-                                    <div v-if="item.postion='professor'">
+                                    <div>
                                         <img :src="item.image_url" class="img-fluid shadow-2-strong" style="margin-left: 10%; width: 100%;" />
                                     </div>
                                 </div>
@@ -114,13 +115,38 @@
                                 </div>
                             </div>
                             <!-- Career End -->
+                            <br>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Tabs Graduate -->
             <div class="tab-pane fade" id="members1-tabs2" role="tabpanel" aria-labelledby="members1-tab2">
-                Tab2 Content
+                <div class="members-container container-fuild">
+                    <div class="members-title">
+                        <h2 class="member-title">Ph.D. Course</h2>
+                    </div>
+                    <hr/>
+                    <div>
+                        <h4>Empty</h4>
+                    </div>
+                    <hr/>
+                    <div class="members-title">
+                        <h2 class="member-title">Master Course</h2>
+                    </div>
+                    <hr/>
+                    <div v-for="item in members_" :key="item.name">
+                        <div class="" v-if="item.position='master'">
+                            <ul class="list-group list-group-secondary">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <div class="fw-bold">{{ item.name }}</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Tabs Undergraduate -->
             <div class="tab-pane fade" id="members1-tabs3" role="tabpanel" aria-labelledby="members1-tab3">
@@ -151,8 +177,10 @@ export default {
   },
   methods: {
     getMembersData() {
+        this.members_ = []
         var members_ = []
-        member.forEach(function(m) {
+        member.forEach(function(m, i) {
+            console.log(m, i)
             var _member = {
                 name: m.name,
                 first_name: m.first_name,
@@ -166,10 +194,10 @@ export default {
                 educational_background: m.educational_background,
                 career: m.career
             };
-            members_.push(_member)
+            members_.push(_member);
+            console.log(members_);
         });
-        console.log(members_)
-        this.members_ = members_
+        this.members_ = members_;
     }
   }
 }
