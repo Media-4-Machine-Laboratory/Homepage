@@ -13,6 +13,11 @@
         "cv_url": "",
         "position": "professor",
         "project": [{}],
-        "description": [{}]
+        "description": [{}],
+        "educational_background": [
+            {"1": "경북대학교 공학사 / 전자공학과"},
+            {"2": "경북대학교 공학석사 / 전자공학과"},
+            {"3": "경북대학교 공학박사 / 전자공학과"}
+        ]
     }
 ]

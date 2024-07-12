@@ -53,6 +53,23 @@
                                             </p>
                                         </div>
                                         <br>
+                                        <div class="email row">
+                                            <p class="email h5 col-3">
+                                                <i class="far fa-envelope"></i>&nbsp; <span>Email</span>
+                                            </p>
+                                            <p class="email h5 col-9">
+                                                <i class="fas fa-circle-chevron-right"></i> <span style="color: gray; font-size: 14px; align-items: center;">{{ item.email }}</span>
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="email row">
+                                            <p class="email h5 col-3">
+                                                <i class="fas fa-briefcase"></i>&nbsp; <span>Position</span>
+                                            </p>
+                                            <p class="email h5 col-9">
+                                                <i class="fas fa-circle-chevron-right"></i> <span style="color: gray; font-size: 14px; align-items: center;">Associate Professor</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
