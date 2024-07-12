@@ -12,14 +12,20 @@
     font-weight: 700;
 }
 
-.members-tabs::before {
+.members-tabs {
+    position: relative;
+    margin-top: 100px;
+    z-index: 5;
+}
+
+.members-bg {
     content: "";
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: -2;
+    z-index: -1;
     background-size: cover;
     background-image: url('../main_assets/members_background.png');
     min-height: 100vh;
