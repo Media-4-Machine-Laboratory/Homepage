@@ -5,16 +5,16 @@
         <div class="members-tabs">
             <ul class="nav nav-tabs nav-justified mb-3" id="members1" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a data-mdb-tab-init class="nav-link active" id="members1-tab1" href="#members1-tabs1" role="tab" aria-controls="members1-tabs1" aria-selected="true">Professor</a>
+                    <a data-mdb-tab-init class="nav-link active" id="members1-tab1" href="#members1-tabs1" role="tab" aria-controls="members1-tabs1" aria-selected="true" style="color: white">Professor</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a data-mdb-tab-init class="nav-link" id="members1-tab2" href="#members1-tabs2" role="tab" aria-controls="members1-tabs2" aria-selected="false">Graduate</a>
+                    <a data-mdb-tab-init class="nav-link" id="members1-tab2" href="#members1-tabs2" role="tab" aria-controls="members1-tabs2" aria-selected="false" style="color: white">Graduate</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a data-mdb-tab-init class="nav-link" id="members1-tab3" href="#members1-tabs3" role="tab" aria-controls="members1-tabs3" aria-selected="false">Undergraduate</a>
+                    <a data-mdb-tab-init class="nav-link" id="members1-tab3" href="#members1-tabs3" role="tab" aria-controls="members1-tabs3" aria-selected="false" style="color: white">Undergraduate</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a data-mdb-tab-init class="nav-link" id="members1-tab4" href="#members1-tabs4" role="tab" aria-controls="members1-tabs4" aria-selected="false">Alumni</a>
+                    <a data-mdb-tab-init class="nav-link" id="members1-tab4" href="#members1-tabs4" role="tab" aria-controls="members1-tabs4" aria-selected="false" style="color: white">Alumni</a>
                 </li>
             </ul>
         </div>

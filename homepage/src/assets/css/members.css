@@ -45,3 +45,7 @@
     background-color: #ffffff;
     height: 60vh;
 }
+
+.nav-tabs {
+    --mdb-nav-tabs-link-active-bg: transparent;
+}
