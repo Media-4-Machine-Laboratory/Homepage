@@ -57,8 +57,7 @@ export default {
         var interest = []
         for (var i1 in _interest.item) {
             var interest_ = {
-                name: _interest.item[i1].name,
-                link: _interest.item[i1].link
+                name: _interest.item[i1].name
             }
             interest.push(interest_)
         }
@@ -94,7 +93,8 @@ export default {
         for (var i5 in _educational_background.item) {
             var educational_background_ = {
                 name: _educational_background.item[i5].name,
-                link: _educational_background.item[i5].link
+                start_year: _educational_background.item[i5].start_year,
+                end_year: _educational_background.item[i5].end_year,
             }
             educational_background.push(educational_background_)
         }
@@ -103,7 +103,10 @@ export default {
         for (var i6 in _career.item) {
             var career_ = {
                 name: _career.item[i6].name,
-                link: _career.item[i6].link
+                desc: _career.item[i6].desc,
+                start_year: _career.item[i6].start_year,
+                end_year: _career.item[i6].end_year,
+                color: _career.item[16].color
             }
             career.push(career_)
         }
