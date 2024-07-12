@@ -127,41 +127,40 @@
                     </div>
                     <hr/>
                     <!-- Member Item Start -->
-                    <div v-for="item in members_graduate" :key="item.name">
-                        <div class="row" v-if="item.position==='graduate'">
-                            <a @click="setRouterMember(item)">
-                                <div class="card">
-                                    <div class="card-body d-flex justify-content-center">
-                                        <div class="row">
-                                            <!-- Member Image -->
-                                            <div class="col-4">
-                                                <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
-                                            </div>
-                                            <!-- Member Information -->
-                                            
-                                            <div class="member-information-graduate col-6">
-                                                <div class="row">
-                                                    <div class="member-information-graduate-course col">
-                                                        <h3 class="fw-bold" style="color:#124559">Master Course</h3>
-                                                    </div>
-                                                    <div class="col v-line2"></div>
-                                                    <div class="member-information-graduate-name col">
-                                                        <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
-                                                        <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
-                                                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-6" v-for="item in members_graduate" :key="item.name">
+                                <a @click="setRouterMember(item)">
+                                    <div class="card">
+                                        <div class="card-body d-flex justify-content-center">
+                                            <div class="row">
+                                                <!-- Member Image -->
+                                                <div class="col-4">
+                                                    <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
                                                 </div>
-                                            </div>
-                                            <div class="member-information-graduate-badge col-2">
-                                                <!-- Member's Project -->
-                                                <div v-for="i in item.interest" :key="i.name">
-                                                    <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                <!-- Member Information -->
+                                                
+                                                <div class="member-information-graduate col-6">
+                                                        <div class="member-information-graduate-course">
+                                                            <h3 class="fw-bold" style="color:#124559">Master Course</h3>
+                                                        </div>
+                                                        <div class="member-information-graduate-name">
+                                                            <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
+                                                            <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
+                                                        </div>
+                                                </div>
+                                                <div class="member-information-graduate-badge col-2">
+                                                    <!-- Member's Project -->
+                                                    <div v-for="i in item.interest" :key="i.name">
+                                                        <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                            
                                     </div>
-                                        
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- Member Item End -->

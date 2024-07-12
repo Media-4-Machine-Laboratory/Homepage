@@ -51,27 +51,5 @@
         "career": [
             {"name": "동아대학교 컴퓨터AI공학부", "desc": "부교수", "start_year": "2023", "end_year": "Present", "color": "#41516C"}
         ]
-    },
-    {
-        "name": "subinbyeon",
-        "first_name": "Byeon",
-        "last_name": "Subin",
-        "email": "2471322@donga.ac.kr",
-        "positions": "graduate",
-        "image_url": "jeongilseo.png",
-        "social": [
-            {"github": "none"},
-            {"linkedin": "none"},
-            {"sites": "none"}
-        ],
-        "cv_url": "",
-        "project": [{}],
-        "description": [{}],
-        "educational_background": [
-            {"name": "경북대학교 공학사 / 전자공학과", "start_year": "1990", "end_year": "1994"}
-        ],
-        "career": [
-            {"name": "동아대학교 컴퓨터AI공학부", "desc": "부교수", "start_year": "2023", "end_year": "Present", "color": "#41516C"}
-        ]
     }
 ]
