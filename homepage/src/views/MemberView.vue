@@ -20,6 +20,7 @@
                     <div class="member-social-box">
                         <p class="h5">Social</p>
                         <div v-for="s in member.social" :key="s.name">
+                            {{ s }}
                             <div v-if="s.link !== 'none'">
                                 here
                                 <p class="h6 text-uppercase"><a :href="`{s.link}`" style="color:black"><i class="fab" :class="fa-$s.name"></i>{{ s.name }}</a></p>
@@ -45,6 +46,13 @@ export default {
     },
     mounted() {
         this.member = this.$route.query
+        this.member.interest = JSON.parse(this.member.interest)
+        this.member.social = JSON.parse(this.member.social)
+        this.member.description = JSON.parse(this.member.description)
+        this.member.project = JSON.parse(this.member.project)
+        this.member.educational_background = JSON.parse(this.member.educational_background)
+        this.member.career = JSON.parse(this.member.career)
+        console.log(this.member)
     }
 }
 </script>

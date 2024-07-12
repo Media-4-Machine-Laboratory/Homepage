@@ -307,6 +307,7 @@ export default {
                 interest: member[m].interest,
                 image_url: require(`../assets/member_picture/${member[m].image_url}`),
                 cv_url: member[m].cv_url && require(`../assets/member_cv/${member[m].cv_url}`),
+                social: member[m].social,
                 description: member[m].description,
                 project: member[m].project,
                 educational_background: member[m].educational_background,
@@ -345,13 +346,26 @@ export default {
                     last_name: item.last_name,
                     email: item.email,
                     position: item.positions,
-                    interest: item.interest,
+                    interest: JSON.stringify({
+                        item: item.interest
+                    }),
                     image_url: item.image_url,
                     cv_url: item.cv_url,
-                    description: item.description,
-                    project: item.project,
-                    educational_background: item.educational_background,
-                    career: item.career
+                    social: JSON.stringify({
+                        item: item.social
+                    }),
+                    description: JSON.stringify({
+                        item: item.description
+                    }),
+                    project: JSON.stringify({
+                        item: item.project
+                    }),
+                    educational_background: JSON.stringify({
+                        item: item.educational_background
+                    }),
+                    career: JSON.stringify({
+                        item: item.career
+                    }),
                 }
             }
         );
