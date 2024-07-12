@@ -42,9 +42,15 @@
 
 <script>
 import { Tab, initMDB } from 'mdb-ui-kit';
+import member from '../assets/members.json';
 
 export default {
   name: 'MembersView',
+  data() {
+    return {
+        members: member
+    }
+  },
   mounted() {
     initMDB({ Tab });
   }
