@@ -52,3 +52,18 @@
 .nav-tabs {
     --mdb-nav-tabs-link-active-bg: transparent;
 }
+
+.member-name {
+    margin-left: 20%;
+    padding-top: 5%;
+    text-align: left;
+    color: black;
+}
+
+.member-info {
+    display: block;
+    justify-content: left;
+    text-align: left;
+    margin-left: 20%;
+    color: black;
+}
