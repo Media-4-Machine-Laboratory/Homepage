@@ -105,8 +105,8 @@
                                 <div class="col-1 v-line"></div>
                                 <div class="col-7">
                                     <ul class="timeline" v-for="i in item.career" :key="i.name">
-                                        <li style="--accent-color:#41516C">
-                                            <div class="date">{{ i.start_year }}</div>
+                                        <li :style="{'--accent-color': i.color}">
+                                            <div class="date">{{ i.start_year }} - {{ i.end_year }}</div>
                                             <div class="title">{{ i.name }}</div>
                                             <div class="descr">{{ i.desc }}</div>
                                         </li>
