@@ -1,6 +1,12 @@
 .member {
     padding-top: 10%;
     height: 100vh;
+    font-family: 'Pretendard-Regular';
+}
+
+.member a {
+    text-decoration: none;
+    color: #3B71CA;
 }
 
 .member-profile {

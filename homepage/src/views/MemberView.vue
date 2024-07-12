@@ -10,8 +10,21 @@
                         </div>
                     </div>
                     <hr/>
+                    <div class="member-email">
+                        <p class="h6"><i class="far fa-envelope"></i> {{ member.email }}</p>
+                    </div>
                     <div class="member-cv">
-                        <a href="#">CV / Resume</a>
+                        <p class="h6"><a href="#">CV / Resume</a></p>
+                    </div>
+                    <hr/>
+                    <div class="member-social-box">
+                        <p class="h5">Social</p>
+                        <div v-for="s in member.social" :key="s.name">
+                            <div v-if="s.link !== 'none'">
+                                here
+                                <p class="h6 text-uppercase"><a :href="`{s.link}`" style="color:black"><i class="fab" :class="fa-$s.name"></i>{{ s.name }}</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="v-line3 col-lg-2"></div>

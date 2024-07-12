@@ -65,9 +65,8 @@
         ],
         "image_url": "sangkyunjeon.jpeg",
         "social": [
-            {"github": "https://github.com/jsk0910"},
-            {"linkedin": "none"},
-            {"sites": "none"}
+            {"name": "github", "link": "https://github.com/jsk0910"},
+            {"name": "linkedin", "link": "none"}
         ],
         "cv_url": "",
         "project": [{}],
