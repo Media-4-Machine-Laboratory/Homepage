@@ -30,7 +30,6 @@
                     </div>
                     <hr/>
                     <div v-for="item in members_" :key="item.name">
-                        {{ item.position }}
                         <div v-if="item.position==='professor'">
                             <!-- Main Info Start -->
                             <div class="main-info row d-flex justify-content-center">
@@ -124,28 +123,48 @@
             <div class="tab-pane fade" id="members1-tabs2" role="tabpanel" aria-labelledby="members1-tab2">
                 <div class="members-container container-fuild">
                     <div class="members-title">
-                        <h2 class="member-title">Ph.D. Course</h2>
+                        <h2 class="member-title">Graduate School</h2>
                     </div>
                     <hr/>
-                    <div>
-                        <h4>Empty</h4>
-                    </div>
-                    <hr/>
-                    <div class="members-title">
-                        <h2 class="member-title">Master Course</h2>
-                    </div>
-                    <hr/>
+                    <!-- Member Item Start -->
                     <div v-for="item in members_" :key="item.name">
-                        <div class="" v-if="item.position='master'">
-                            <ul class="list-group list-group-secondary">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div class="fw-bold">{{ item.name }}</div>
+                        <div class="row" v-if="item.position==='graduate'">
+                            <div class="col" >
+                                <div class="card">
+                                    <div class="card-body d-flex justify-content-between">
+                                        <div class="row">
+                                            <!-- Member Image -->
+                                            <div class="col-4">
+                                                <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
+                                            </div>
+                                            <!-- Member Information -->
+                                            
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h3 class="fw-bold" style="color:#124559">Master Course</h3>
+                                                    </div>
+                                                    <div class="col v-line2"></div>
+                                                    <div class="col">
+                                                        <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
+                                                        <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <!-- Member's Project -->
+                                                <div v-for="i in item.interest" :key="i.name">
+                                                    <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </li>
-                            </ul>
+                                        
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Member Item End -->
                 </div>
             </div>
             <!-- Tabs Undergraduate -->
@@ -179,24 +198,24 @@ export default {
     getMembersData() {
         this.members_ = []
         var members_ = []
-        member.forEach(function(m, i) {
-            console.log(m, i)
-            var _member = {
-                name: m.name,
-                first_name: m.first_name,
-                last_name: m.last_name,
-                email: m.email,
-                image_url: require(`../assets/member_picture/${m.image_url}`),
-                cv_url: m.cv_url && require(`../assets/member_cv/${m.cv_url}`),
-                description: m.description,
-                position: m.position,
-                project: m.project,
-                educational_background: m.educational_background,
-                career: m.career
+        for (var m in member) {
+            var member_ = {
+                name: member[m].name,
+                first_name: member[m].first_name,
+                last_name: member[m].last_name,
+                email: member[m].email,
+                position: member[m].positions,
+                interest: member[m].interest,
+                image_url: require(`../assets/member_picture/${member[m].image_url}`),
+                cv_url: member[m].cv_url && require(`../assets/member_cv/${member[m].cv_url}`),
+                description: member[m].description,
+                project: member[m].project,
+                educational_background: member[m].educational_background,
+                career: member[m].career
             };
-            members_.push(_member);
-            console.log(members_);
-        });
+
+            members_.push(member_)
+        }
         this.members_ = members_;
     }
   }
