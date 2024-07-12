@@ -1,7 +1,7 @@
 <template>
     <div class="member">
         <div class="container">
-            {{ name }}
+            {{ member }}
         </div>
     </div>
 </template>
@@ -12,11 +12,11 @@ export default {
     name: 'MemberView',
     data() {
         return {
-            member: []
+            member: {}
         }
     },
     mounted() {
-        console.log(this.$route.query)
+        this.member = this.$route.query
     }
 }
 </script>
