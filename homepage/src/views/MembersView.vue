@@ -121,7 +121,9 @@ export default {
                 cv_url: m.cv_url && require(`../assets/member_cv/${m.cv_url}`),
                 description: m.description,
                 position: m.position,
-                project: m.project
+                project: m.project,
+                educational_background: m.educational_background,
+                career: m.career
             };
             members_.push(_member)
         });

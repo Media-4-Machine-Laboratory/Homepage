@@ -15,9 +15,15 @@
         "project": [{}],
         "description": [{}],
         "educational_background": [
-            {"1": "경북대학교 공학사 / 전자공학과"},
-            {"2": "경북대학교 공학석사 / 전자공학과"},
-            {"3": "경북대학교 공학박사 / 전자공학과"}
+            {"name": "경북대학교 공학박사 / 전자공학과", "start_year": "1996", "end_year": "2005"},
+            {"name": "경북대학교 공학석사 / 전자공학과", "start_year": "1994", "end_year": "1996"},
+            {"name": "경북대학교 공학사 / 전자공학과", "start_year": "1990", "end_year": "1994"}
+        ],
+        "career": [
+            {"name": "동아대학교 컴퓨터AI공학부 부교수", "start_year": "2023", "end_year": "Present"},
+            {"name": "University of Southamton (영국) ISVR(음향공학연구센터) 주재연구원", "start_year": "2010", "end_year": "2011"},
+            {"name": "한국전자통신연구원(ETRI) / 실감미디어연구실 실장 / 책임연구원", "start_year": "2000", "end_year": "2023"},
+            {"name": "(주) LG반도체 중앙연구소 / MCU설계 3팀 선임연구원", "start_year": "1998", "end_year": "2000"}
         ]
     }
 ]
