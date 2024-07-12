@@ -1,7 +1,16 @@
 .member {
     padding-top: 10%;
+    height: 100vh;
 }
 
 .member-profile {
     height: 50%;
+    width: 50%;
+    display: inline-block;
+    justify-content: center;
+}
+
+.v-line {
+    border-left : thin solid #000000;
+    height : 80vh;
 }
