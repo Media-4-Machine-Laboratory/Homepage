@@ -6,11 +6,15 @@
 .member-profile {
     height: 50%;
     width: 50%;
-    display: inline-block;
-    justify-content: center;
 }
 
-.v-line {
+.member-name {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.v-line3 {
     border-left : thin solid #000000;
     height : 80vh;
 }

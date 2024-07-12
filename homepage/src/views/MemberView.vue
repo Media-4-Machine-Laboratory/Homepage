@@ -9,11 +9,12 @@
                             <p class="h3">{{ member.last_name }} {{ member.first_name }}</p>
                         </div>
                     </div>
+                    <hr/>
                     <div class="member-cv">
                         <a href="#">CV / Resume</a>
                     </div>
                 </div>
-                <div class="v-line col-lg-2"></div>
+                <div class="v-line3 col-lg-2"></div>
                 <div class="member-main col-lg-7"></div>
             </div>
         </div>

@@ -82,7 +82,7 @@
                                 <div class="col-4">
                                     <p class="h2">Education</p>
                                 </div>
-                                <div class="col-2 v-line"></div>
+                                <div class="col-2 v-line2"></div>
                                 <div class="col-6">
                                     <ul class="list-group list-group-light" v-for="i in item.educational_background" :key="i.name">
                                         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -102,7 +102,7 @@
                                 <div class="col-4">
                                     <p class="h2">Career</p>
                                 </div>
-                                <div class="col-1 v-line"></div>
+                                <div class="col-1 v-line2"></div>
                                 <div class="col-7">
                                     <ul class="timeline" v-for="i in item.career" :key="i.name">
                                         <li :style="{'--accent-color': i.color}">
