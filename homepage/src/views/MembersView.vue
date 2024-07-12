@@ -32,10 +32,9 @@
                     <div class="members-name d-flex justify-content-start">
                         <div class="row">
                             <div class="col-md-4">
-                                <div v-for="item in members" :key="item.name">
+                                <div v-for="item in this.members_" :key="item.name">
                                     <div v-if="item.postion='professor'">
                                         <img :src="item.image_url" />
-                                        <img src="../assets/member_picture/jeongilseo.png" />
                                     </div>
                                 </div>
                             </div>
@@ -62,13 +61,13 @@
 
 <script>
 import { Tab, initMDB } from 'mdb-ui-kit';
-import member from '../assets/members.json';
+import member from '@/assets/members.json';
 
 export default {
   name: 'MembersView',
   data() {
     return {
-        members: []
+        members_: [],
     }
   },
   mounted() {
@@ -77,21 +76,24 @@ export default {
   },
   methods: {
     getMembersData() {
+        var members_ = []
         member.forEach(function(m) {
-            console.log(m)
             var _member = {
                 name: m.name,
                 first_name: m.first_name,
                 last_name: m.last_name,
                 email: m.email,
                 image_url: require(`../assets/member_picture/${m.image_url}`),
-                cv_url: require(`../assets/member_cv/${m.cv_url}`),
+                //cv_url: require(`../assets/member_cv/${m.cv_url}`),
                 description: m.description,
                 position: m.position,
                 project: m.project
-            }
-            this.members.push(_member)
-        })
+            };
+            console.log(_member);
+            members_.push(_member)
+        });
+        this.members_ = members_
+        console.log(this.members_);
     }
   }
 }
