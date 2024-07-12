@@ -262,3 +262,15 @@
         border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
     }
 }
+
+.member-information-graduate-course {
+    margin-top: 20%;
+}
+
+.member-information-graduate-name {
+    margin-top: 15%;
+}
+
+.member-information-graduate-badge {
+    margin-top: 5%;
+}
