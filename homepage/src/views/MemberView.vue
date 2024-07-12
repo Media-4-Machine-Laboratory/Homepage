@@ -2,6 +2,7 @@
     <div class="member">
         <div class="container">
             <div class="row">
+                <!-- Sidebar Start -->
                 <div class="member-sidebar col-lg-3">
                     <div class="member-profile-box align-items-center">
                         <img class="member-profile" :src="member.image_url" />
@@ -19,6 +20,11 @@
                     <hr/>
                     <div class="member-social-box">
                         <p class="h5">Social</p>
+                        <div v-for="s in member.social" :key="s.name">
+                            <div v-if="s.link !== 'none'">
+                                <p class="h6 text-uppercase"><a @click="onClickRedirect(s.link)" style="color:black"><i class="fab" :class="{'fa-linkedin': s.name === 'linkedin', 'fa-github': s.name === 'github'}"></i>{{ s.name }}</a></p>
+                            </div>
+                        </div>
                         <!--<div v-for="s in member.social" :key="s.name">
                             {{ s }}
                             <div v-if="s.link !== 'none'">
@@ -28,8 +34,11 @@
                         </div>-->
                     </div>
                 </div>
+                <!-- Sidebar End -->
                 <div class="v-line3 col-lg-2"></div>
+                <!-- Main Start -->
                 <div class="member-main col-lg-7"></div>
+                <!-- Main End -->
             </div>
         </div>
     </div>
@@ -128,7 +137,11 @@ export default {
         }
 
         this.member = member_
-        console.log(this.member)
+    },
+    methods: {
+        onClickRedirect: function(link) {
+            window.open(link, "_blank")
+        }
     }
 }
 </script>
