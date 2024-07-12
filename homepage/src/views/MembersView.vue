@@ -32,17 +32,27 @@
                     <div>
                         <div v-for="item in members_" :key="item.name">
                             <div class="row d-flex justify-content-center">
+                                <!-- Image -->
                                 <div class="col-4 col-lg-4">
                                     <div v-if="item.postion='professor'">
                                         <img :src="item.image_url" class="img-fluid shadow-2-strong" style="margin-left: 10%; width: 100%;" />
                                     </div>
                                 </div>
+                                <!-- Information -->
                                 <div class="col-8 col-lg-8">
                                     <br>
                                     <p class="member-name h2 text-uppercase fw-bold">{{ item.last_name }} {{ item.first_name }}</p>
                                     <br>
                                     <div class="member-info">
-                                        <p class="office h5"><i class="fas fa-house"></i> <span>Office</span> <i class="fas fa-circle-chevron-right"></i> <span style="color: gray; font-size: 14px; align-items: center;">630, Enginnering 5th building(S06), Dong-A University</span></p>
+                                        <div class="office row">
+                                            <p class="office h5 col-3">
+                                                    <i class="fas fa-house"></i> <span>Office</span>
+                                            </p>
+                                            <p class="office h5 col-9">
+                                                <i class="fas fa-circle-chevron-right"></i> <span style="color: gray; font-size: 14px; align-items: center;">630, Enginnering 5th building(S06), Dong-A University</span>
+                                            </p>
+                                        </div>
+                                        <br>
                                     </div>
                                 </div>
                             </div>
