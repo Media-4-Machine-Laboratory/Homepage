@@ -30,7 +30,10 @@
                     </div>
                     <hr/>
                     <div class="members-name d-flex justify-content-start">
-                        name
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-6"></div>
+                        </div>
                     </div>
                 </div>
             </div>
