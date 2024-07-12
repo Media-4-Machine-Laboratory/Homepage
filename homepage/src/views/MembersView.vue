@@ -24,7 +24,7 @@
             <div class="tab-pane fade show active" id="members1-tabs1" role="tabpanel" aria-labelledby="members1-tab1">
                 <div class="members-container container-fuild d-flex justify-content-start">
                     <div class="members-title">
-                        <h2>Professor</h2>
+                        <h2 class="member-title">Professor</h2>
                     </div>
                     <hr/>
                 </div>
