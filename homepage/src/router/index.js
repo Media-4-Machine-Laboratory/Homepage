@@ -23,7 +23,7 @@ const routes = [
     component: MembersView
   },
   {
-    path: '/member',
+    path: '/member/:member',
     name: 'member',
     component: MemberView,
     props: true
