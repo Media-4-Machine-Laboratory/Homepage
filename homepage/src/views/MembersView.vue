@@ -84,7 +84,7 @@ export default {
                 first_name: m.first_name,
                 last_name: m.last_name,
                 email: m.email,
-                image_url: require(m.image_url),
+                image_url: require(`../assets/member_picture/${m.image_url}`),
                 cv_url: require(m.cv_url),
                 description: m.description,
                 position: m.position,

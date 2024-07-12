@@ -4,7 +4,7 @@
         "first_name": "Seo",
         "last_name": "JeongIl",
         "email": "jeongilseo@dau.ac.kr",
-        "image_url": "../assets/member_picture/jeongilseo.png",
+        "image_url": "jeongilseo.png",
         "social": [
             {"github": "none"},
             {"linkedin": "none"},
