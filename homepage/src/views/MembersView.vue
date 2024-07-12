@@ -29,7 +29,7 @@
                         <h2 class="member-title">Professor</h2>
                     </div>
                     <hr/>
-                    <div v-for="item in members_" :key="item.name">
+                    <div v-for="item in members_professor" :key="item.name">
                         <div v-if="item.position==='professor'">
                             <!-- Main Info Start -->
                             <div class="main-info row d-flex justify-content-center">
@@ -127,7 +127,7 @@
                     </div>
                     <hr/>
                     <!-- Member Item Start -->
-                    <div v-for="item in members_" :key="item.name">
+                    <div v-for="item in members_graduate" :key="item.name">
                         <div class="row" v-if="item.position==='graduate'">
                             <a @click="setRouterMember(item)">
                                 <div class="card">
@@ -187,7 +187,14 @@ export default {
   name: 'MembersView',
   data() {
     return {
-        members_: [],
+        members_professor: [],
+        members_graduate: [],
+        members_undergraduate: [],
+        members_alumni: [],
+        num_professor: 0,
+        num_graduate: 0,
+        num_undergraduate: 0,
+        num_alumni: 0
     }
   },
   mounted() {
@@ -196,8 +203,14 @@ export default {
   },
   methods: {
     getMembersData() {
-        this.members_ = []
-        var members_ = []
+        this.members_professor = []
+        this.members_graduate = []
+        this.members_undergraduate = []
+        this.members_alumni = []
+        var members_professor = []
+        var members_graduate = []
+        var members_undergraduate = []
+        var members_alumni = []
         for (var m in member) {
             var member_ = {
                 name: member[m].name,
@@ -214,9 +227,27 @@ export default {
                 career: member[m].career
             };
 
-            members_.push(member_)
+            if (member[m].positions == 'professor') {
+                members_professor.push(member_)
+                this.num_professor++
+            }
+            if (member[m].positions == 'graduate') {
+                members_graduate.push(member_)
+                this.num_graduate++
+            }
+            if (member[m].positions == 'undergraduate') {
+                members_undergraduate.push(member_)
+                this.num_undergraduate++
+            }
+            if (member[m].positions == 'alumni') {
+                members_alumni.push(member_)
+                this.num_alumni++
+            }
         }
-        this.members_ = members_;
+        this.members_professor = members_professor;
+        this.members_graduate = members_graduate;
+        this.members_undergraduate = members_undergraduate;
+        this.members_alumni = members_alumni;
     },
     setRouterMember(item) {
         this.$router.push({name: 'member', query: item});
