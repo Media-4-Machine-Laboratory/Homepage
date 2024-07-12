@@ -6,7 +6,9 @@
         "email": "jeongilseo@dau.ac.kr",
         "image_url": "./member_picture/jeongilseo.png",
         "social": [
-            {"github": "none"}
+            {"github": "none"},
+            {"linkedin": "none"},
+            {"sites": "none"}
         ],
         "cv_url": "./member_cv/jeongilseo.pdf",
         "position": "professor",
