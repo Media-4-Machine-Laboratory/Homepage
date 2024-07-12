@@ -129,9 +129,9 @@
                     <!-- Member Item Start -->
                     <div v-for="item in members_" :key="item.name">
                         <div class="row" v-if="item.position==='graduate'">
-                            <div class="col" >
+                            <a :href="`/member?${item.name}`">
                                 <div class="card">
-                                    <div class="card-body d-flex justify-content-between">
+                                    <div class="card-body d-flex justify-content-center">
                                         <div class="row">
                                             <!-- Member Image -->
                                             <div class="col-4">
@@ -161,7 +161,7 @@
                                     </div>
                                         
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <!-- Member Item End -->
