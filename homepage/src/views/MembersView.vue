@@ -107,7 +107,7 @@
                                         <li style="--accent-color:#41516C">
                                             <div class="date">{{ i.start_year }}</div>
                                             <div class="title">{{ i.name }}</div>
-                                            <div class="descr"></div>
+                                            <div class="descr">{{ i.desc }}</div>
                                         </li>
                                     </ul>
                                 </div>
