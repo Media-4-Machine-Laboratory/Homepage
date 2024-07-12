@@ -29,16 +29,18 @@
                         <h2 class="member-title">Professor</h2>
                     </div>
                     <hr/>
-                    <div class="members-name d-flex justify-content-start">
+                    <div class="members-name d-flex justify-content-center">
                         <div class="row">
                             <div class="col-md-4">
                                 <div v-for="item in this.members_" :key="item.name">
                                     <div v-if="item.postion='professor'">
-                                        <img :src="item.image_url" />
+                                        <img :src="item.image_url" class="img-fluid" style="margin-left: 10%; width: 100%" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <p class="h2 text-uppercase">{{ item.name }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,16 +86,14 @@ export default {
                 last_name: m.last_name,
                 email: m.email,
                 image_url: require(`../assets/member_picture/${m.image_url}`),
-                //cv_url: require(`../assets/member_cv/${m.cv_url}`),
+                cv_url: m.cv_url && require(`../assets/member_cv/${m.cv_url}`),
                 description: m.description,
                 position: m.position,
                 project: m.project
             };
-            console.log(_member);
             members_.push(_member)
         });
         this.members_ = members_
-        console.log(this.members_);
     }
   }
 }
