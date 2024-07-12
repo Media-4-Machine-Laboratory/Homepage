@@ -34,7 +34,7 @@
                             <div class="col-md-4">
                                 <div v-for="item in members" :key="item.name">
                                     <div v-if="item.postion='professor'">
-                                        <img src={{ item.image_url }} />
+                                        <img :src="item.image_url" />
                                     </div>
                                 </div>
                             </div>
