@@ -132,22 +132,22 @@
                             <div class="col-6" v-for="item in members_graduate" :key="item.name">
                                 <a @click="setRouterMember(item)">
                                     <div class="card">
-                                        <div class="card-body d-flex justify-content-center">
+                                        <div class="card-body d-flex justify-content-between">
                                             <div class="row">
                                                 <!-- Member Image -->
                                                 <div class="col-4">
                                                     <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
                                                 </div>
                                                 <!-- Member Information -->
-                                                
-                                                <div class="member-information-graduate col-6">
-                                                        <div class="member-information-graduate-course">
-                                                            <h3 class="fw-bold" style="color:#124559">Master Course</h3>
-                                                        </div>
-                                                        <div class="member-information-graduate-name">
-                                                            <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
-                                                            <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
-                                                        </div>
+                                                <div class="col-6">
+                                                    <div>
+                                                        <h3 class="fw-bold" style="color:#124559">Master Course</h3>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="member-information-graduate-name">
+                                                        <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
+                                                        <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
+                                                    </div>
                                                 </div>
                                                 <div class="member-information-graduate-badge col-2">
                                                     <!-- Member's Project -->
@@ -157,7 +157,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                            
                                     </div>
                                 </a>
                             </div>
