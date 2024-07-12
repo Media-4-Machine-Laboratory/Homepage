@@ -129,7 +129,7 @@
                     <!-- Member Item Start -->
                     <div v-for="item in members_" :key="item.name">
                         <div class="row" v-if="item.position==='graduate'">
-                            <a :href="`/member?name=${item.name}`">
+                            <a @click="setRouterMember(item)">
                                 <div class="card">
                                     <div class="card-body d-flex justify-content-center">
                                         <div class="row">
@@ -217,6 +217,9 @@ export default {
             members_.push(member_)
         }
         this.members_ = members_;
+    },
+    setRouterMember(item) {
+        this.$router.push({name: 'member', query: item});
     }
   }
 }

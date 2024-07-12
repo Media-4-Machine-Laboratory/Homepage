@@ -5,6 +5,9 @@
 <script>
 
 export default {
-    name: 'MemberView'
+    name: 'MemberView',
+    mounted() {
+        console.log(this.$route.query)
+    }
 }
 </script>
