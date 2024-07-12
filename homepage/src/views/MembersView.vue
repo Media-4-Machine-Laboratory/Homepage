@@ -31,7 +31,13 @@
                     <hr/>
                     <div class="members-name d-flex justify-content-start">
                         <div class="row">
-                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div v-for="item in members" :key="item.name">
+                                    <div v-if="item.postion='professor'">
+                                        <img src={{ item.image_url }} />
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-6"></div>
                         </div>
                     </div>
