@@ -129,7 +129,7 @@
                     <!-- Member Item Start -->
                     <div v-for="item in members_" :key="item.name">
                         <div class="row" v-if="item.position==='graduate'">
-                            <a :href="`/member?${item.name}`">
+                            <a :href="`/member?name=${item.name}`">
                                 <div class="card">
                                     <div class="card-body d-flex justify-content-center">
                                         <div class="row">
