@@ -1,6 +1,7 @@
 <template>
     <div class="members">
         <!-- Tabs navs -->
+        <div class="members-bg"></div>
         <div class="members-tabs">
             <ul class="nav nav-tabs nav-justified mb-3" id="members1" role="tablist">
                 <li class="nav-item" role="presentation">

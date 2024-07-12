@@ -11,3 +11,19 @@
     font-family: 'Pretendard-Regular';
     font-weight: 700;
 }
+
+.members-tabs::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -2;
+    background-size: cover;
+    background-image: url('../main_assets/members_background.png');
+    min-height: 100vh;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
