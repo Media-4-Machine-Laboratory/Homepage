@@ -26,7 +26,7 @@
                     <div class="members-title">
                         <h2>Professor</h2>
                     </div>
-                <hr/>
+                    <hr/>
                 </div>
             </div>
             <!-- Tabs Graduate -->
