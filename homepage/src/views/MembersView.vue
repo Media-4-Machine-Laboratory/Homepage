@@ -139,7 +139,7 @@
                                                     <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
                                                 </div>
                                                 <!-- Member Information -->
-                                                <div class="col-6">
+                                                <div class="col-8">
                                                     <div>
                                                         <h3 class="fw-bold" style="color:#124559">Master Course</h3>
                                                     </div>
@@ -148,11 +148,13 @@
                                                         <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
                                                         <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
                                                     </div>
-                                                </div>
-                                                <div class="member-information-graduate-badge col-2">
-                                                    <!-- Member's Project -->
-                                                    <div v-for="i in item.interest" :key="i.name">
-                                                        <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                    <div class="member-information-graduate-badge">
+                                                        <!-- Member's Project -->
+                                                        <div class="row">
+                                                            <div class="col" v-for="i in item.interest" :key="i.name">
+                                                                <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -185,7 +187,7 @@
                                                     <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
                                                 </div>
                                                 <!-- Member Information -->
-                                                <div class="col-6">
+                                                <div class="col-8">
                                                     <div>
                                                         <h3 class="fw-bold" style="color:#124559">Undergraduate</h3>
                                                     </div>
@@ -194,11 +196,13 @@
                                                         <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
                                                         <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
                                                     </div>
-                                                </div>
-                                                <div class="member-information-graduate-badge col-2">
-                                                    <!-- Member's Project -->
-                                                    <div v-for="i in item.interest" :key="i.name">
-                                                        <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                    <div class="member-information-graduate-badge">
+                                                        <!-- Member's Project -->
+                                                        <div class="row">
+                                                            <div class="col" v-for="i in item.interest" :key="i.name">
+                                                                <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -231,7 +235,7 @@
                                                     <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
                                                 </div>
                                                 <!-- Member Information -->
-                                                <div class="col-6">
+                                                <div class="col-8">
                                                     <div>
                                                         <h3 class="fw-bold" style="color:#124559">Alumni</h3>
                                                     </div>
@@ -240,11 +244,11 @@
                                                         <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
                                                         <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
                                                     </div>
-                                                </div>
-                                                <div class="member-information-graduate-badge col-2">
-                                                    <!-- Member's Project -->
-                                                    <div v-for="i in item.interest" :key="i.name">
-                                                        <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                    <div class="member-information-graduate-badge">
+                                                        <!-- Member's Project -->
+                                                        <div v-for="i in item.interest" :key="i.name">
+                                                            <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
