@@ -95,6 +95,24 @@
                                 </div>
                             </div>
                             <!-- Education Background End -->
+                            <!-- Career Start -->
+                            <hr/>
+                            <div class="career row d-flex justify-content-center">
+                                <div class="col-4">
+                                    <p class="h2">Career</p>
+                                </div>
+                                <div class="col-2 v-line"></div>
+                                <div class="col-6">
+                                    <ul class="timeline" v-for="i in item.career" :key="i.name">
+                                        <li style="--accent-color:#41516C">
+                                            <div class="date">{{ i.start_year }}</div>
+                                            <div class="title">{{ i.name }}</div>
+                                            <div class="descr"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Career End -->
                         </div>
                     </div>
                 </div>
