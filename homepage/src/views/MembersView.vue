@@ -35,6 +35,7 @@
                                 <div v-for="item in members" :key="item.name">
                                     <div v-if="item.postion='professor'">
                                         <img :src="item.image_url" />
+                                        <img src="../assets/member_picture/jeongilseo.png" />
                                     </div>
                                 </div>
                             </div>
@@ -67,11 +68,31 @@ export default {
   name: 'MembersView',
   data() {
     return {
-        members: member
+        members: []
     }
   },
   mounted() {
     initMDB({ Tab });
+    this.getMembersData()
+  },
+  methods: {
+    getMembersData() {
+        member.forEach(function(m) {
+            console.log(m)
+            var _member = {
+                name: m.name,
+                first_name: m.first_name,
+                last_name: m.last_name,
+                email: m.email,
+                image_url: require(m.image_url),
+                cv_url: require(m.cv_url),
+                description: m.description,
+                position: m.position,
+                project: m.project
+            }
+            this.members.push(_member)
+        })
+    }
   }
 }
 </script>
