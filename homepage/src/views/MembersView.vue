@@ -167,11 +167,95 @@
             </div>
             <!-- Tabs Undergraduate -->
             <div class="tab-pane fade" id="members1-tabs3" role="tabpanel" aria-labelledby="members1-tab3">
-                Tab3 Content
+                <div class="members-container container-fuild">
+                    <div class="members-title">
+                        <h2 class="member-title">Undergraduate</h2>
+                    </div>
+                    <hr/>
+                    <!-- Member Item Start -->
+                    <div>
+                        <div class="row">
+                            <div class="col-6" v-for="item in members_undergraduate" :key="item.name">
+                                <a @click="setRouterMember(item)">
+                                    <div class="card">
+                                        <div class="card-body d-flex justify-content-between">
+                                            <div class="row">
+                                                <!-- Member Image -->
+                                                <div class="col-4">
+                                                    <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
+                                                </div>
+                                                <!-- Member Information -->
+                                                <div class="col-6">
+                                                    <div>
+                                                        <h3 class="fw-bold" style="color:#124559">Undergraduate</h3>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="member-information-graduate-name">
+                                                        <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
+                                                        <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="member-information-graduate-badge col-2">
+                                                    <!-- Member's Project -->
+                                                    <div v-for="i in item.interest" :key="i.name">
+                                                        <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Member Item End -->
+                </div>
             </div>
             <!-- Tabs Alumni -->
             <div class="tab-pane fade" id="members1-tabs4" role="tabpanel" aria-labelledby="members1-tab4">
-                Tab4 Content
+                <div class="members-container container-fuild">
+                    <div class="members-title">
+                        <h2 class="member-title">Alumni</h2>
+                    </div>
+                    <hr/>
+                    <!-- Member Item Start -->
+                    <div>
+                        <div class="row">
+                            <div class="col-6" v-for="item in members_alumni" :key="item.name">
+                                <a @click="setRouterMember(item)">
+                                    <div class="card">
+                                        <div class="card-body d-flex justify-content-between">
+                                            <div class="row">
+                                                <!-- Member Image -->
+                                                <div class="col-4">
+                                                    <img :src="item.image_url" class="img-fluid shadow-2-strong" style="width: 100%;"/>
+                                                </div>
+                                                <!-- Member Information -->
+                                                <div class="col-6">
+                                                    <div>
+                                                        <h3 class="fw-bold" style="color:#124559">Alumni</h3>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="member-information-graduate-name">
+                                                        <h3 class="fw-bold text-uppercase" style="color: #000000">{{ item.last_name }} {{ item.first_name }}</h3>
+                                                        <p class="text-muted"><i class="far fa-envelope"></i> {{ item.email }}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="member-information-graduate-badge col-2">
+                                                    <!-- Member's Project -->
+                                                    <div v-for="i in item.interest" :key="i.name">
+                                                        <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Member Item End -->
+                </div>
             </div>
         </div>
     </div>

@@ -51,5 +51,31 @@
         "career": [
             {"name": "동아대학교 컴퓨터AI공학부", "desc": "부교수", "start_year": "2023", "end_year": "Present", "color": "#41516C"}
         ]
+    },
+    {
+        "name": "sangkyunjeon",
+        "first_name": "Jeon",
+        "last_name": "Sangkyun",
+        "email": "2243336@donga.ac.kr",
+        "positions": "undergraduate",
+        "interest": [
+            {"name": "VCM"},
+            {"name": "FCM"},
+            {"name": "Computer Vision"}
+        ],
+        "image_url": "sangkyunjeon.jpeg",
+        "social": [
+            {"github": "https://github.com/jsk0910"},
+            {"linkedin": "none"},
+            {"sites": "none"}
+        ],
+        "cv_url": "",
+        "project": [{}],
+        "description": [{}],
+        "educational_background": [
+            {"name": "동아대학교 / 컴퓨터공학과", "start_year": "2022", "end_year": "2026"}
+        ],
+        "career": [
+        ]
     }
 ]
