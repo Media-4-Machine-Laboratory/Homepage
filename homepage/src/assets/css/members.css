@@ -129,7 +129,7 @@
 
 /* card */
 .timeline li {
-  grid-column: 2;
+  grid-column: 1;
   --inlineP: 1.5rem;
   margin-inline: var(--inlineP);
   grid-row: span 2;
