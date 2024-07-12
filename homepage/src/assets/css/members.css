@@ -98,6 +98,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  align-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
 /* line */
@@ -254,12 +256,4 @@
     .timeline li:nth-child(odd) .date {
         border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
     }
-}
-
-.credits {
-  margin-top: 1rem;
-  text-align: right;
-}
-.credits a {
-  color: var(--color);
 }
