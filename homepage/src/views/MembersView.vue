@@ -332,7 +332,7 @@ export default {
         this.members_alumni = members_alumni;
     },
     setRouterMember(item) {
-        this.$router.push({name: 'member', query: item});
+        this.$router.push({name: 'member', params: {member: item}});
     }
   }
 }
