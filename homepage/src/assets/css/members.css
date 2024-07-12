@@ -72,10 +72,6 @@
     background-color: #ffffff;
 }
 
-.education_background {
-    height: 60vh;
-}
-
 .education_background::after {
     background-color: #454955;
     z-index: 10;
