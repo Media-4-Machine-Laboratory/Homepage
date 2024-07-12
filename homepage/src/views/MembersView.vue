@@ -82,8 +82,11 @@
                                 <div class="col-4">
                                     <p class="h2">Education</p>
                                 </div>
-                                <div class="col-8" v-for="i in item.educational_background" :key="i.name">
-                                    {{ i.name }}
+                                <div class="col-2 v-line"></div>
+                                <div class="col-6">
+                                    <div class="information" v-for="i in item.educational_background" :key="i.name">
+                                        <p>{{ i.name }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
