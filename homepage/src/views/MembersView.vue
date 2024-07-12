@@ -39,10 +39,10 @@
                                 </div>
                                 <div class="col-8 col-lg-8">
                                     <br>
-                                    <p class="member-name h1 text-uppercase fw-bold">{{ item.last_name }} {{ item.first_name }}</p>
+                                    <p class="member-name h2 text-uppercase fw-bold">{{ item.last_name }} {{ item.first_name }}</p>
                                     <br>
                                     <div class="member-info">
-                                        <p class="office h4"><i class="fas fa-house"></i> <span>Office</span> <i class="fas fa-circle-chevron-right"></i> <span style="color: gray; font-size: 12px;">630, Enginnering 5th building(S06), Dong-A University</span></p>
+                                        <p class="office h5"><i class="fas fa-house"></i> <span>Office</span> <i class="fas fa-circle-chevron-right"></i> <span style="color: gray; font-size: 14px; align-items: center;">630, Enginnering 5th building(S06), Dong-A University</span></p>
                                     </div>
                                 </div>
                             </div>
