@@ -67,7 +67,9 @@
             {"name": "linkedin", "link": "none"}
         ],
         "cv_url": "",
-        "project": [{}],
+        "project": [
+            {"name": "VCM: Video Coding for Machine", "description": "Video Coding for Machine"}
+        ],
         "description": [{}],
         "educational_background": [
             {"name": "동아대학교 / 컴퓨터공학과", "start_year": "2022", "end_year": "2026"}

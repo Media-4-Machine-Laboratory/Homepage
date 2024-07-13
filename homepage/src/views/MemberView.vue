@@ -14,6 +14,13 @@
                     <div class="member-email">
                         <p class="h6"><i class="far fa-envelope"></i> {{ member.email }}</p>
                     </div>
+                    <br>
+                    <div class="member-interest row">
+                        <div class="col" v-for="i in member.interest" :key="i.name">
+                            <span class="badge rounded-pill badge-success">{{ i.name }}</span>
+                        </div>
+                    </div>
+                    <br>
                     <div class="member-cv">
                         <p class="h6"><a href="#">CV / Resume</a></p>
                     </div>
@@ -30,7 +37,28 @@
                 <!-- Sidebar End -->
                 <div class="v-line3 col-lg-2"></div>
                 <!-- Main Start -->
-                <div class="member-main col-lg-7"></div>
+                <div class="member-main col-lg-7">
+                    <h2 style="text-align: left;">Projects</h2>
+                    <div class="accordion accordion-borderless" id="accordianParent">
+                        <!-- Item -->
+                        <div class="accordion-item" v-for="projects in member.project" :key="projects.name">
+                            <!-- Header -->
+                            <h2 class="accordion-header" id="flush-1">
+                                <button data-mdb-collapse-init class="accordion-button" type="button" data-mdb-toggle="collapse"
+                                    data-mdb-target="#content1" aria-expanded="true" aria-controls="content1">
+                                    {{ projects.name }}
+                                </button>
+                            </h2>
+                            <!-- Content -->
+                            <div id="content1" class="accordion-collapse collapse show"
+                                aria-labelledby="flush-1" data-mdb-parent="#accordianParent">
+                                <div class="accordion-body">
+                                    `{{ projects.description }}`
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Main End -->
             </div>
         </div>
@@ -38,6 +66,7 @@
 </template>
 
 <script>
+import { Collapse, initMDB } from 'mdb-ui-kit';
 
 export default {
     name: 'MemberView',
@@ -86,7 +115,7 @@ export default {
         for (var i4 in _project.item) {
             var project_ = {
                 name: _project.item[i4].name,
-                link: _project.item[i4].link
+                description: _project.item[i4].description
             }
             project.push(project_)
         }
@@ -130,6 +159,8 @@ export default {
         }
 
         this.member = member_
+        console.log(this.member.project)
+        initMDB({ Collapse })
     },
     methods: {
         onClickRedirect: function(link) {
