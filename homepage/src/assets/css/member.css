@@ -1,12 +1,48 @@
 .member {
-    padding-top: 10%;
+    padding-top: 15%;
     height: 100vh;
     font-family: 'Pretendard-Regular';
 }
 
-.member a {
+.member-cv a {
     text-decoration: none;
-    color: #3B71CA;
+    color: rgb(0, 99, 228);
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    padding: .5em;
+    margin-left: -.5em;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    &:before, &:after {
+        position: absolute;
+        content: '';
+        border-bottom: 3px solid rgb(0, 99, 228);
+        border-radius: 1em;
+        bottom: .3em;
+        transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &:before {
+        width: 1em;
+        transform-origin: left;
+    }
+
+    &:after {
+        width: 82%;
+        left: 1em;
+        transform: translateX(110%);
+    }
+
+    &:hover:before {
+        transform: scaleX(0.3);
+    }
+
+    &:hover:after {
+        transform: translateX(0);
+    }
 }
 
 .member-profile {

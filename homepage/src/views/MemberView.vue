@@ -26,7 +26,7 @@
                     <br>
                     <!-- CV -->
                     <div class="member-cv">
-                        <p class="h6"><a @click="openPDF(member.cv_url.item)">CV / Resume</a></p>
+                        <p class="h6"><a @click="openPDF(member.cv_url.item)"><i class="fas fa-link"></i> CV / Resume</a></p>
                     </div>
                     <hr/>
                     <!-- Social -->
@@ -156,7 +156,7 @@ export default {
             window.open(link, "_blank")
         },
         openPDF: function(url) {
-            window.open(url, '_blank')
+            window.open(url.default, '_blank')
         }
     }
 }
