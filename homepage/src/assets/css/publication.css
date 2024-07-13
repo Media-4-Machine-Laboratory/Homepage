@@ -1,0 +1,8 @@
+.publication {
+    font-family: 'Pretendard-Regular';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
