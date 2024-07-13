@@ -39,21 +39,21 @@
                 <!-- Main Start -->
                 <div class="member-main col-lg-7">
                     <h2 style="text-align: left;">Projects</h2>
-                    <div class="accordion accordion-borderless" id="accordianParent">
+                    <div class="accordion accordion-borderless" id="accordionParent">
                         <!-- Item -->
-                        <div class="accordion-item" v-for="projects in member.project" :key="projects.name">
+                        <div class="accordion-item" v-for="(projects, index) in member.project" :key="index">
                             <!-- Header -->
-                            <h2 class="accordion-header" id="flush-1">
+                            <h2 class="accordion-header" :id="'flush-'+index">
                                 <button data-mdb-collapse-init class="accordion-button" type="button" data-mdb-toggle="collapse"
-                                    data-mdb-target="#content1" aria-expanded="true" aria-controls="content1">
+                                    :data-mdb-target="'#content'+index" aria-expanded="true" :aria-controls="'content'+index">
                                     {{ projects.name }}
                                 </button>
                             </h2>
                             <!-- Content -->
-                            <div id="content1" class="accordion-collapse collapse show"
-                                aria-labelledby="flush-1" data-mdb-parent="#accordianParent">
+                            <div :id="'content'+index" class="accordion-collapse collapse show"
+                                :aria-labelledby="'flush-'+index" data-mdb-parent="#accordionParent">
                                 <div class="accordion-body">
-                                    `{{ projects.description }}`
+                                    {{ projects.description }}
                                 </div>
                             </div>
                         </div>
@@ -159,7 +159,6 @@ export default {
         }
 
         this.member = member_
-        console.log(this.member.project)
         initMDB({ Collapse })
     },
     methods: {

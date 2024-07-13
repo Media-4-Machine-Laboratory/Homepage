@@ -68,7 +68,8 @@
         ],
         "cv_url": "",
         "project": [
-            {"name": "VCM: Video Coding for Machine", "description": "Video Coding for Machine"}
+            {"name": "VCM: Video Coding for Machine", "description": "Video Coding for Machine"},
+            {"name": "FCM: Feature Compression for Machine", "description": "FCM"}
         ],
         "description": [{}],
         "educational_background": [
