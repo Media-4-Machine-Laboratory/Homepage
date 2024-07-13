@@ -22,16 +22,9 @@
                         <p class="h5">Social</p>
                         <div v-for="s in member.social" :key="s.name">
                             <div v-if="s.link !== 'none'">
-                                <p class="h6 text-uppercase"><a @click="onClickRedirect(s.link)" style="color:black"><i class="fab" :class="{'fa-linkedin': s.name === 'linkedin', 'fa-github': s.name === 'github'}"></i>{{ s.name }}</a></p>
+                                <p class="h6 text-uppercase"><a @click="onClickRedirect(s.link)" style="color:black"><i class="fab" :class="{'fa-linkedin': s.name === 'linkedin', 'fa-github': s.name === 'github'}"></i> {{ s.name }}</a></p>
                             </div>
                         </div>
-                        <!--<div v-for="s in member.social" :key="s.name">
-                            {{ s }}
-                            <div v-if="s.link !== 'none'">
-                                here
-                                <p class="h6 text-uppercase"><a :href="`{s.link}`" style="color:black"><i class="fab" :class="fa-$s.name"></i>{{ s.name }}</a></p>
-                            </div>
-                        </div>-->
                     </div>
                 </div>
                 <!-- Sidebar End -->
