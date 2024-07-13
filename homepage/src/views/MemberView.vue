@@ -39,25 +39,10 @@
                 <!-- Main Start -->
                 <div class="member-main col-lg-7">
                     <h2 style="text-align: left;">Projects</h2>
-                    <div class="accordion accordion-flush" id="accordionParent">
-                        <!-- Item -->
-                        <div class="accordion-item" v-for="(projects, index) in member.project" :key="index">
-                            <!-- Header -->
-                            <h2 class="accordion-header" :id="'flush-'+index">
-                                <button data-mdb-collapse-init class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-                                    :data-mdb-target="'#content'+index" aria-expanded="false" :aria-controls="'content'+index">
-                                    {{ projects.name }}
-                                </button>
-                            </h2>
-                            <!-- Content -->
-                            <div :id="'content'+index" class="accordion-collapse collapse"
-                                :aria-labelledby="'flush-'+index" data-mdb-parent="#accordionParent">
-                                <div class="accordion-body">
-                                    {{ projects.description }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <details class="info" v-for="project in member.project" :key="project.name">
+                        <summary>{{ project.name }}</summary>
+                        <p>{{ project.description }}</p>
+                    </details>
                 </div>
                 <!-- Main End -->
             </div>
