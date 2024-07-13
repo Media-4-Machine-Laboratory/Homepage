@@ -71,7 +71,12 @@
             {"name": "VCM: Video Coding for Machine", "description": "Video Coding for Machine"},
             {"name": "FCM: Feature Compression for Machine", "description": "FCM"}
         ],
-        "description": [{}],
+        "description": [
+            {
+                "name": "memberpage", 
+                "desc": "<p>I have joined the Department of Computer Engineering·Artificial Intelligence at the Dong-A University since Mar. 2022. I have entered the M4ML in May. 2023.</p><p>The main research of interest are image/video compression, computer vision. I'm primarily researching Video Coding for Machine(VCM) and Feature Compression for Machine(FCM).</p>"
+            }
+        ],
         "educational_background": [
             {"name": "동아대학교 / 컴퓨터공학과", "start_year": "2022", "end_year": "2026"}
         ],

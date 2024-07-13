@@ -18,8 +18,8 @@
                     </div>
                     <br>
                     <!-- Interest -->
-                    <div class="member-interest row">
-                        <div class="col" v-for="i in member.interest" :key="i.name">
+                    <div class="member-interest row d-flex justify-content-start">
+                        <div class="col-sm-3" v-for="i in member.interest" :key="i.name">
                             <span class="badge rounded-pill badge-success">{{ i.name }}</span>
                         </div>
                     </div>
@@ -43,6 +43,13 @@
                 <div class="v-line3 col-lg-2"></div>
                 <!-- Main Start -->
                 <div class="member-main col-lg-7">
+                    <h2 style="text-align: left;">About Me</h2>
+                    <div class="aboutme" v-for="d in member.description" :key="d.name">
+                        <div v-if="d.name === 'memberpage'">
+                            <div style="text-align: left;" v-html="d.desc"></div>
+                        </div>
+                    </div>
+                    <hr/>
                     <h2 style="text-align: left;">Projects</h2>
                     <details class="info" v-for="project in member.project" :key="project.name">
                         <summary>{{ project.name }}</summary>
@@ -96,7 +103,7 @@ export default {
         for (var i3 in _description.item) {
             var description_ = {
                 name: _description.item[i3].name,
-                link: _description.item[i3].link
+                desc: _description.item[i3].desc
             }
             description.push(description_)
         }
@@ -149,6 +156,7 @@ export default {
         }
 
         this.member = member_
+        console.log(this.member.description)
         initMDB({ Collapse })
     },
     methods: {
