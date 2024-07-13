@@ -66,7 +66,7 @@
             {"name": "github", "link": "https://github.com/jsk0910"},
             {"name": "linkedin", "link": "none"}
         ],
-        "cv_url": "",
+        "cv_url": "sangkyunjeon.pdf",
         "project": [
             {"name": "VCM: Video Coding for Machine", "description": "Video Coding for Machine"},
             {"name": "FCM: Feature Compression for Machine", "description": "FCM"}

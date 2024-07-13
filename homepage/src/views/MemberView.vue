@@ -4,6 +4,7 @@
             <div class="row">
                 <!-- Sidebar Start -->
                 <div class="member-sidebar col-lg-3">
+                    <!-- Profile -->
                     <div class="member-profile-box align-items-center">
                         <img class="member-profile" :src="member.image_url" />
                         <div class="member-name">
@@ -11,20 +12,24 @@
                         </div>
                     </div>
                     <hr/>
+                    <!-- Email -->
                     <div class="member-email">
                         <p class="h6"><i class="far fa-envelope"></i> {{ member.email }}</p>
                     </div>
                     <br>
+                    <!-- Interest -->
                     <div class="member-interest row">
                         <div class="col" v-for="i in member.interest" :key="i.name">
                             <span class="badge rounded-pill badge-success">{{ i.name }}</span>
                         </div>
                     </div>
                     <br>
+                    <!-- CV -->
                     <div class="member-cv">
-                        <p class="h6"><a href="#">CV / Resume</a></p>
+                        <p class="h6"><a @click="onClickRedirect(member.cv_url)">CV / Resume</a></p>
                     </div>
                     <hr/>
+                    <!-- Social -->
                     <div class="member-social-box">
                         <p class="h5">Social</p>
                         <div v-for="s in member.social" :key="s.name">
