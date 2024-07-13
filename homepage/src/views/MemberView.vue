@@ -26,7 +26,7 @@
                     <br>
                     <!-- CV -->
                     <div class="member-cv">
-                        <p class="h6"><a @click="onClickRedirect(member.cv_url)">CV / Resume</a></p>
+                        <p class="h6"><a @click="openPDF(member.cv_url.item)">CV / Resume</a></p>
                     </div>
                     <hr/>
                     <!-- Social -->
@@ -139,7 +139,7 @@ export default {
             email: this.$route.query.email,
             position: this.$route.query.position,
             image_url: this.$route.query.image_url,
-            cv_url: this.$route.query.cv_url,
+            cv_url: JSON.parse(this.$route.query.cv_url),
             interest: interest,
             social: social,
             project: project,
@@ -154,6 +154,9 @@ export default {
     methods: {
         onClickRedirect: function(link) {
             window.open(link, "_blank")
+        },
+        openPDF: function(url) {
+            window.open(url, '_blank')
         }
     }
 }

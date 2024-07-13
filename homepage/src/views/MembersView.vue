@@ -350,7 +350,9 @@ export default {
                         item: item.interest
                     }),
                     image_url: item.image_url,
-                    cv_url: item.cv_url,
+                    cv_url: JSON.stringify({
+                        item: item.cv_url
+                    }),
                     social: JSON.stringify({
                         item: item.social
                     }),
