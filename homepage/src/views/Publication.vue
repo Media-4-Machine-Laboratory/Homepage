@@ -69,7 +69,7 @@
                             <tr v-for="(p, p_idx) in paper.list" :key="p.name">
                                 <td>
                                     <div class="d-flex align-item-center">
-                                        {{ paper.list.length-p_idx+1 }}
+                                        {{ paper.list.length-p_idx }}
                                     </div>
                                 </td>
                                 <td>
@@ -102,7 +102,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <button type="button" class="btn btn-link btn-rounded btn-small fw-bold" data-mdb-ripple-color="dark">
+                                        <button type="button" class="btn btn-link btn-rounded btn-small fw-bold" data-mdb-ripple-color="dark" @click="onNewPage(p.cite)">
                                             <i class="fas fa-up-right-from-square"></i> Go to See
                                         </button>
                                     </div>
@@ -120,7 +120,7 @@
                 role="tabpanel"
                 aria-labelledby="ex3-tab-2"
             >
-            <div class="conference-title">
+                <div class="conference-title">
                     <p class="h3">Conference</p>
                 </div>
                 <div class="conference-content">
@@ -132,13 +132,14 @@
                                 <th>Author</th>
                                 <th>Year</th>
                                 <th>Jounal</th>
+                                <th>Cite</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(c, c_idx) in conference.list" :key="c.name">
                                 <td>
                                     <div class="d-flex align-item-center">
-                                        {{ conference.list.length-c_idx+1 }}
+                                        {{ conference.list.length-c_idx }}
                                     </div>
                                 </td>
                                 <td>
@@ -169,6 +170,13 @@
                                         </div>
                                     </div>
                                 </td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-link btn-rounded btn-small fw-bold" data-mdb-ripple-color="dark" @click="onNewPage(c.cite)">
+                                            <i class="fas fa-up-right-from-square"></i> Go to See
+                                        </button>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -182,7 +190,9 @@
                 role="tabpanel"
                 aria-labelledby="ex3-tab-3"
             >
-                Activation
+                <div class="conference-title">
+                    <p class="h3">Activation</p>
+                </div>
             </div>
             <!-- Activation End -->
         </div>
@@ -216,6 +226,9 @@ export default {
             this.paper = publications[0]
             this.sconference = publications[1]
             this.activation = publications[2]
+        },
+        onNewPage: function(link) {
+            window.open(link, "_blink")
         }
     }
 }
