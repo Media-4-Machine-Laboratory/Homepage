@@ -43,6 +43,13 @@
         <!-- Tabs Content Start -->
         <div class="tab-content" id="publication-content">
             <div class="tab-pane fade show active" id="paper-tab" role="tabpanel" aria-labelledby="paper-tab">
+                Paper
+            </div>
+            <div class="tab-pane fade" id="conference-tab" role="tabpanel" aria-labelledby="conference-tab">
+                Conference
+            </div>
+            <div class="tab-pane fade" id="activation-tab" role="tabpanel" aria-labelledby="activation-tab">
+                Activation
             </div>
         </div>
     </div>
