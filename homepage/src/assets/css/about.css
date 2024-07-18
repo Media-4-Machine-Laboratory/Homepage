@@ -1,0 +1,21 @@
+.about {
+    height: 100vh;
+    background-color: #333333;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+.about::-webkit-scrollbar {
+    display: none;
+}
+
+.about section {
+    scroll-snap-align: start;
+    height: 100vh;
+    align-items: center;
+    font-size: x-large;
+}
+
