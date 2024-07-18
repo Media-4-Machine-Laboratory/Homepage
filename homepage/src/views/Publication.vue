@@ -192,7 +192,7 @@
             >
                 <div class="activation-content">
                     <div class="container">
-                        <button @click="topFunction()" class="back-to-top-button" id="back-to-top-button" title="Go to top">Back to top</button>
+                        <a @click="topFunction()" class="back-to-top-button btn btn-floating text-white btn-lg" id="back-to-top-button" data-mdb-ripple-init style="background-color: #f44336;">Back to top</a>
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="card Lab-desc">
@@ -281,7 +281,10 @@ export default {
         onNewPage: function(link) {
             window.open(link, "_blink")
         },
-        topFunction: function() {}
+        topFunction: function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     }
 }
 </script>
