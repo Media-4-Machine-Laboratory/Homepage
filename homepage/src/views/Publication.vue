@@ -228,9 +228,15 @@
                                     <div class="col-md-4 thumbnail-box">
                                         <img src="../assets/main_assets/logo-small.png" />
                                     </div>
-                                    <div class="col-md-8 content-box">
-                                        <div class="content-title">
-                                            <p class="h3 fw-bold" style="font-family: 'Pretendard-Regular';">Title</p>
+                                    <div class="col-md-8 content-box" style="padding-left: 5%;">
+                                        <div class="content-title" style="text-align: left;">
+                                            <p class="h1 fw-bold" style="font-family: 'Pretendard-Regular';">Title</p>
+                                            <br>
+                                            <p class="h5" style="font-weight: 800; font-family: 'Pretendard-Regular';">description</p>
+                                        </div>
+                                        <br>
+                                        <div class="content-button" style="text-align: left;">
+                                            <button type="button" class="btn btn-primary text-white" data-mdb-ripple-init>Keep Reading</button>
                                         </div>
                                     </div>
                                 </div>
