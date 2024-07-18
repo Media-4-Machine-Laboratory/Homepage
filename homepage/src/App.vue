@@ -15,6 +15,7 @@
   </header>
   <div class="wrapper">
     <router-view/>
+    <br>
   </div>
   <footer class="footer">
     <div class="container">
