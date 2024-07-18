@@ -192,7 +192,9 @@
             >
                 <div class="activation-content">
                     <div class="container">
-                        <a @click="topFunction()" class="back-to-top-button btn btn-floating text-white btn-lg" id="back-to-top-button" data-mdb-ripple-init style="background-color: #f44336;">Back to top</a>
+                        <div class="fixed-action-btn" data-mdb-button-init data-mdb-ripple-init>
+                            <a @click="topFunction()" class="back-to-top-button btn btn-dark btn-floating text-white" id="back-to-top-button" data-mdb-ripple-init>Back to top</a>
+                        </div>
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="card Lab-desc">

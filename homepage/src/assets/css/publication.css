@@ -18,6 +18,11 @@
     overflow-y: scroll;
 }
 
+.back-to-top-button {
+    height: 10vh;
+    width: 10vh;
+}
+
 .Lab-desc {
     background-color: rgba(249, 248, 233, 0.929);
 }
