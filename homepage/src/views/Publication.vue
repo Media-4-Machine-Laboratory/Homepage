@@ -190,8 +190,11 @@
                 role="tabpanel"
                 aria-labelledby="ex3-tab-3"
             >
-                <div class="conference-title">
+                <div class="activation-title">
                     <p class="h3">Activation</p>
+                </div>
+                <div class="activation-content">
+                    <div class="card"></div>
                 </div>
             </div>
             <!-- Activation End -->

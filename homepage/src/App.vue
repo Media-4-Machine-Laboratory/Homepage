@@ -13,7 +13,9 @@
       </ul>
     </nav>
   </header>
-  <router-view/>
+  <div class="wrapper">
+    <router-view/>
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -83,6 +85,6 @@ body {
 }
 
 @import "./assets/css/navbar.css";
-
+@import "./assets/css/wrapper.css";
 @import "./assets/css/footer.css";
 </style>
