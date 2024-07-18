@@ -190,11 +190,53 @@
                 role="tabpanel"
                 aria-labelledby="ex3-tab-3"
             >
-                <div class="activation-title">
-                    <p class="h3">Activation</p>
-                </div>
                 <div class="activation-content">
-                    <div class="card"></div>
+                    <div class="container">
+                        <button @click="topFunction()" class="back-to-top-button" id="back-to-top-button" title="Go to top">Back to top</button>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card Lab-desc">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="../assets/main_assets/logo-small.png" style="width: 10vw; height: 14vh;"/>
+                                        </div>
+                                        <br>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="title h3"><span class="fw-bold">M</span>edia-<span class="fw-bold">F</span>or-<span class="fw-bold">M</span>achine-<span class="fw-bold">L</span>aboratory</p>
+                                        </div>
+                                        <br>
+                                        <div style="text-align: center;">
+                                            <p style="font-weight: 800; font-family: 'Pretendard-Regular';">Welcome to our activation page! <br>Here, we share updates on our activities, including stories about the topics we study and research, our paper publications, and participation in conferences.<br>Dive in and explore the diverse range of our endeavors!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="card proj-desc">
+                                    <div class="card-header">
+                                        <p class="h3" style="font-family: 'Pretendard-Regular';">Our current activities...</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div style="text-align: left;">
+                                            <p class="h4 fw-bold" style="font-family: 'Pretendard-Regular';">Title</p>
+                                            <p style="font-weight: 800; font-family: 'Pretendard-Regular';">description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8" style="padding-left: 5%;">
+                                <div class="content-1 row">
+                                    <div class="col-md-4 thumbnail-box">
+                                        <img src="../assets/main_assets/logo-small.png" />
+                                    </div>
+                                    <div class="col-md-8 content-box">
+                                        <div class="content-title">
+                                            <p class="h3 fw-bold" style="font-family: 'Pretendard-Regular';">Title</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Activation End -->
@@ -232,7 +274,8 @@ export default {
         },
         onNewPage: function(link) {
             window.open(link, "_blink")
-        }
+        },
+        topFunction: function() {}
     }
 }
 </script>

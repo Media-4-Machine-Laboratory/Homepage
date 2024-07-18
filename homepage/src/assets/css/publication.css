@@ -17,3 +17,32 @@
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
+
+.back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 10vh;
+    left: 10vh;
+    z-index: 99;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Lab-desc {
+    background-color: rgba(249, 248, 233, 0.929);
+}
+
+.proj-desc {
+    background-color: #FFE1C6;
+}
+
+.thumbnail-box {
+    width: 10wh;
+    border: 1px solid black;
+}
+
+.thumbnail-box img {
+    width: 100%;
+    box-sizing: border-box;
+}
