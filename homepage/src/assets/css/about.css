@@ -1,11 +1,14 @@
+@import '//classpath:compass/css3';
+
 .about {
-    height: 100vh;
     background-color: #333333;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
+    margin:0;
+    padding:0;
 }
 
 .about::-webkit-scrollbar {
@@ -19,3 +22,15 @@
     font-size: x-large;
 }
 
+.about-landing {
+    background-size: cover;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.main-logo {
+    width: 50%;
+    height: 30%;
+    margin-top: 10%;
+}
