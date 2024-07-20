@@ -17,5 +17,7 @@
 
 <style scoped>
 @import url("../assets/css/about.css");
+</style>
+<style lang="scss">
 @import url("../assets/css/about-timeline.scss")
 </style>
