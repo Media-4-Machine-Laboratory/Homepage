@@ -200,7 +200,7 @@
                                 <div class="card Lab-desc">
                                     <div class="card-body">
                                         <div class="d-flex justify-content-center">
-                                            <img src="../assets/main_assets/logo-small.png" style="width: 10vw; height: 14vh;"/>
+                                            <img src="../assets/main_assets/logo-small.png" style="width: 8vw; height: 14vh;"/>
                                         </div>
                                         <br>
                                         <div class="d-flex justify-content-center">
