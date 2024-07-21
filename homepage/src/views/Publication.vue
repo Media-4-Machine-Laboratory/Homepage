@@ -232,13 +232,52 @@
                                     </div>
                                     <div class="col-md-8 content-box" style="padding-left: 5%;">
                                         <div class="content-title" style="text-align: left;">
-                                            <p class="h1 fw-bold" style="font-family: 'Pretendard-Regular';">Title</p>
+                                            <p class="h1 fw-bold" style="font-family: 'Pretendard-Regular';">2024년 한국방송미디어공학회 하계학술대회</p>
                                             <br>
                                             <p class="h5" style="font-weight: 800; font-family: 'Pretendard-Regular';">description</p>
                                         </div>
                                         <br>
                                         <div class="content-button" style="text-align: left;">
                                             <button type="button" class="btn btn-primary text-white" data-mdb-ripple-init>Keep Reading</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="content-2 card">
+                                    <div class="content-box card-body" style="padding-left: 5%;">
+                                        <div class="content-title" style="text-align: left;">
+                                            <p class="h3 fw-bold" style="font-family: 'Pretendard-Regular';">KT 디지털 인재 장학생 선정(정영훈)</p>
+                                            <br>
+                                            <p style="font-weight: 500; font-family: 'Pretendard-Regular';">
+                                                컴퓨터공학과 3학년 정영훈 학생이 KT그룹희망나눔재단이 운용하는 KT 디지털인재장학생에 선정되었다. 이는 ICT분야의 우수 인재를 선발하고 지원하고자 하는 장학금 사업이다.(2024년 6월)<br><br>
+                                                Yeonghoon Jeong, a third-year student in Department of Computer Engineering, has been selected as a KT Digital Talent Scholar, operated by the KT Group Hope Sharing Foundation. This scholarship program aims to select and support outstanding talents in the ICT(June 2024).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="content-2 card">
+                                    <div class="content-box card-body" style="padding-left: 5%;">
+                                        <div class="content-title" style="text-align: left;">
+                                            <p class="h3 fw-bold" style="font-family: 'Pretendard-Regular';">한국연구재단 석사과정생연구장려지원금 선정(변수빈)</p>
+                                            <br>
+                                            <p style="font-weight: 500; font-family: 'Pretendard-Regular';">
+                                                한국연구재단에서 석사과정생연구장려지원금 사업에 변수빈 석사과정이 선정되었다. 본 지원금을 통해 '사람과 기계를 위한 영상 부호화 알고리즘 연구'를 진행하게 된다.(2024년 6월)<br><br>
+                                                Subin Byeon, a master student, has been selected for the Master's Resarch Encouragement Grant Program by the National Research Foundation(NRF, South Korea). Thorugh this program, she will conduct a study on 'Video Encoding Algorithms for Human and Machines'. (June, 2024) 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="content-2 card">
+                                    <div class="content-box card-body" style="padding-left: 5%;">
+                                        <div class="content-title" style="text-align: left;">
+                                            <p class="h3 fw-bold" style="font-family: 'Pretendard-Regular';">한국방송미디어공학회 논문지 게재(전상균, 이동민, 서정일)</p>
+                                            <br>
+                                            <p style="font-weight: 500; font-family: 'Pretendard-Regular';">
+                                                'E2E 딥러닝 비디오 코덱의 VCM 내부 코덱 적용을 통한 성능 향상에 관한 연구' 논문이 한국방송미디어공학회 논문지에 게재되었다.(2024년 5월호)<br><br>
+                                                The paper titled 'Improving VCM Performance by applying E2E Deep Learning based Video Codecs' has been published in the Jounal of the Korean Institute of Broadcast and Media Engineers(KBME, May 2024).
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
