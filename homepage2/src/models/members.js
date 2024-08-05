@@ -6,7 +6,7 @@ var memberSchema = new mongoose.Schema({
     pw: {type: String, required: true},
     firstname: {type: String},
     lastname: {type: String},
-    email: {type: String},
+    email: [{type: String}],
     position: {type: String},
     profile_img: {type: Buffer},
     cv_url: {type: String},
