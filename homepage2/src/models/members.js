@@ -2,14 +2,14 @@ var mongoose = require('mongoose')
 var AutoIncrement = require('mongoose-sequence')(mongoose)
 
 var memberSchema = new mongoose.Schema({
-    seq: {type: Number, required: true, uniqued: true},
+    seq: {type: Number, uniqued: true},
     id: {type: String, required: true, uniqued: true},
     pw: {type: String, required: true},
     firstname: {type: String},
     lastname: {type: String},
     email: [{type: String}],
     position: {type: String},
-    profile_img: {type: Buffer},
+    profile_img: {type: String},
     cv_url: {type: String},
     social: {
         name: {type: String},
@@ -45,12 +45,12 @@ memberSchema.statics.findAll = function() {
 
 // FindById
 memberSchema.statics.findOneById = function(payload) {
-    return this.findOne({ payload })
+    return this.findOne({ id: payload })
 }
 
 // UpdateById
 memberSchema.statics.updateOneById = function(id, payload) {
-    return this.findOneAndUpdate({ id }, payload, { new: true })
+    return this.findOneAndUpdate({ id: id }, payload, { new: true })
 }
 
 // DeleteById
