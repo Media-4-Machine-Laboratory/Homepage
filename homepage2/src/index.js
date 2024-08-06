@@ -18,9 +18,10 @@ app.use(bodyParser.json())
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
 
+mongoose.Promise = global.Promise
 // connect mongodb
 mongoose.connect(
-    MONGO_URI
+    MONGO_URI, { dbName: 'm4ml' }
 ).then(() => {
     console.log('Successfully Connected')
 }).catch((e) => {
@@ -29,6 +30,7 @@ mongoose.connect(
 
 // router
 app.use('/', require('./routes/index'))
+app.use('/members', require('./routes/members'))
 
 // listen
 app.listen(port, () => {
