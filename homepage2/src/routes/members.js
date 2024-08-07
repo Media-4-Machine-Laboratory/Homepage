@@ -78,4 +78,17 @@ router.post('/upload_profile_img', upload.single('image'), (req, res, next) => {
     }).catch(err => res.status(500).send(err))
 })
 
+router.post('/upload_pdf', upload.single('pdf'), (req, res, next) => {
+    const userid = req.body.userid
+    const url = req.protocol + '://' + req.get('host')
+    const PdfFile = url + '/public/pdf/' + req.file.filename
+
+    Members.findOneById(userid).then((member) => {
+        member.cv_url = PdfFile
+        Members.updateOneById(userid, member).then((user) => {
+            res.status(200).send(user)
+        }).catch(err => res.status(500).send(err))
+    }).catch(err => res.status(500).send(err))
+})
+
 module.exports = router
