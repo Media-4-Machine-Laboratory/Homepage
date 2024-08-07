@@ -36,11 +36,20 @@ router.post('/login', (req, res) => {
     console.log(userId, userPw)
 
     Members.login(userId, userPw).then((member) => {
-        if (!member) return res.status(404).send({ err: 'Member not found' })
-        console.log(member)
-        res.send(`success: ${member}`)
+        if (!member) {
+            return res.status(404).send({ err: 'Member not found' })
+        }
+        req.session.user = {
+            id: member.id,
+            name: member.firstname + member.lastname
+        }
+        res.redirect('/')
     }).catch(err => res.status(500).send(err))
 })
+
+// router.get('/signup', (req, res) => {
+//     res.render("html/signup")
+// })
 
 router.post('/signup', (req, res, next) => {
     const member = new Members({
