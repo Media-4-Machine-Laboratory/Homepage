@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    margin: 0 auto;
+    font-family: 'Pretendard-Regular';
+    position: fixed;
+    top: auto;
+    width: 100%;
+    z-index: 100;
+}
+
+header img {
+    padding: 0.75rem 0;
+    width: 10%;
+    height: 10%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 769px) {
+    .navbar_logo {
+        margin-left: 0;
+        font-size: 24px;
+    }
+    
+    .navbar_menu {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .navbar_menu li {
+        padding: 8px 12px;
+    }
+    
+    .navbar_togglebtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        
+    }
+
+    .navbar_menu.disactive {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_menu.active li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar_togglebtn {
+        display: block;
+    }
+}

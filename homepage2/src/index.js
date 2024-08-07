@@ -11,7 +11,7 @@ var port = process.env.PORT || 3000
 var MONGO_URI = process.env.MONGOURI
 
 // parser
-app.use(express.static('public'))
+app.use(express.static('views'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
